@@ -99,6 +99,9 @@ Matrix therefore ships through the standard icon-pack protocol:
   published with SHA-256 checksums.
 - The signing key is never committed; CI injects it from encrypted repository secrets.
 
+See [SECURITY.md](SECURITY.md) for the full security model, signing fingerprint and
+private vulnerability-reporting process.
+
 ## Build
 
 ```sh
