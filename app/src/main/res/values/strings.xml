@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="header_sub">DOT-MATRIX ICON PACK · NOTHING OS 5.0</string>
+    <string name="header_apply">APPLY</string>
+
+    <string name="hero_section">SIGNATURE SET</string>
+    <string name="hero_meta">126 ICONS · VECTOR · NO PERMISSIONS</string>
+
+    <string name="studio_section">STYLE STUDIO</string>
+    <string name="studio_hint">Glass and dot colour are compiled per style, so every launcher sees a clean, static icon pack. Pick a combination, install that build, then select it once in your launcher.</string>
+    <string name="studio_colour">DOT COLOUR</string>
+    <string name="studio_surface">SURFACE</string>
+    <string name="studio_glass">GLASS</string>
+    <string name="studio_matte">MATTE</string>
+    <string name="studio_installed">INSTALLED</string>
+    <string name="studio_available">AVAILABLE</string>
+    <string name="studio_install">GET THIS STYLE</string>
+    <string name="studio_apply">HOW TO APPLY</string>
+
+    <string name="apply_section">HOW TO APPLY</string>
+    <string name="apply_steps">1  Install the style build you picked.\n\n2  Open your launcher settings → Icons / Icon pack.\n\n3  Choose “Matrix · %1$s”. Icons apply instantly, no reboot.</string>
+    <string name="apply_launchers">SUPPORTED LAUNCHERS</string>
+    <string name="apply_nothing_title">NOTHING OS 5.0 NOTES</string>
+    <string name="apply_nothing">Nothing OS 5.0 (Android 17) keeps its own icon pipeline. Install a launcher from the list above, or use Nothing’s “Apply to Home screen only” flow where your build exposes it. The pack is 100% offline: no permissions, no network, no trackers, no background services.</string>
+
+    <string name="library_section">ICON LIBRARY</string>
+    <string name="library_title">Browse all 126 icons</string>
+    <string name="library_hint">Search, filter by category, request what is missing</string>
+
+    <string name="request_title">MISSING AN APP?</string>
+    <string name="request_hint">We read only your launchable apps (a narrow package-visibility query). Nothing leaves the device unless you copy the list yourself.</string>
+    <string name="request_button">BUILD ICON REQUEST</string>
+    <string name="request_dialog_title">Icon request</string>
+    <string name="request_none">Every launchable app on this device already has a Matrix icon. Nice.</string>
+    <string name="request_count">%1$d apps without a Matrix icon</string>
+    <string name="request_copy">COPY LIST</string>
+    <string name="request_open_issues">OPEN ISSUES</string>
+    <string name="request_copied">Icon request copied to clipboard</string>
+
+    <string name="footer_security">No permissions · No internet · No analytics · Zero third-party libraries</string>
+    <string name="footer_source">SOURCE &amp; RELEASES</string>
+    <string name="footer_license">MIT licensed · Icons hand-drawn on a 13×13 dot matrix</string>
+
+    <string name="lib_title">ICON LIBRARY</string>
+    <string name="lib_search">Search icons</string>
+    <string name="lib_empty">No icons match that search.</string>
+    <string name="back">Back</string>
+
+    <string name="apply_dialog_title">Apply Matrix</string>
+</resources>

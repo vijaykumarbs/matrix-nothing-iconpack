@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build all styles (debug)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install SDK packages
+        run: sdkmanager --install "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build
+        run: ./gradlew --no-daemon :app:assembleDebug
+
+      - name: Verify no permissions and inspect one APK
+        run: |
+          APK=$(find app/build/outputs/apk -name "matrix-phosphor-glass.apk" -o -name "app-phosphorGlass-debug.apk" | head -1)
+          echo "Inspecting $APK"
+          "$ANDROID_HOME"/build-tools/36.0.0/aapt2 dump permissions "$APK"
+          if "$ANDROID_HOME"/build-tools/36.0.0/aapt2 dump permissions "$APK" | grep -q "uses-permission"; then
+            echo "Unexpected permission found"; exit 1
+          fi

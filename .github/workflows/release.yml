@@ -1,0 +1,99 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & publish signed APKs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install SDK packages
+        run: sdkmanager --install "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Decode signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.MATRIX_KEYSTORE }}
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo "::error::MATRIX_KEYSTORE secret is missing"
+            exit 1
+          fi
+          mkdir -p keystore
+          printf '%s' "$KEYSTORE_BASE64" | base64 -d > keystore/release.jks
+
+      - name: Build release APKs
+        env:
+          MATRIX_KEYSTORE: keystore/release.jks
+          MATRIX_KEYSTORE_PASSWORD: ${{ secrets.MATRIX_KEYSTORE_PASSWORD }}
+          MATRIX_KEY_ALIAS: ${{ secrets.MATRIX_KEY_ALIAS }}
+          MATRIX_KEY_PASSWORD: ${{ secrets.MATRIX_KEY_PASSWORD }}
+        run: ./gradlew --no-daemon :app:assembleRelease
+
+      - name: Verify signatures and permissions
+        run: |
+          for apk in app/build/outputs/apk/*/release/matrix-*.apk; do
+            "$ANDROID_HOME"/build-tools/36.0.0/apksigner verify --verbose "$apk" >/dev/null
+            if "$ANDROID_HOME"/build-tools/36.0.0/aapt2 dump permissions "$apk" | grep -q "uses-permission"; then
+              echo "Unexpected permission in $apk"; exit 1
+            fi
+          done
+
+      - name: Collect assets
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/*/release/matrix-*.apk dist/
+          cd dist
+          sha256sum matrix-*.apk > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.apk
+            dist/SHA256SUMS.txt
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          body: |
+            Matrix — dot-matrix icons for Nothing OS.
+
+            **8 styles · 126 icons · zero permissions · ≈262 KB each**
+
+            | Style | Finish | APK |
+            |---|---|---|
+            | Phosphor | Glass | `matrix-phosphor-glass.apk` |
+            | Phosphor | Flat | `matrix-phosphor-flat.apk` |
+            | Ember | Glass | `matrix-ember-glass.apk` |
+            | Ember | Flat | `matrix-ember-flat.apk` |
+            | Ice | Glass | `matrix-ice-glass.apk` |
+            | Ice | Flat | `matrix-ice-flat.apk` |
+            | Amber | Glass | `matrix-amber-glass.apk` |
+            | Amber | Flat | `matrix-amber-flat.apk` |
+
+            Verify downloads with `shasum -a 256 -c SHA256SUMS.txt`.
+            Install the APK, open Matrix, then apply the pack in your launcher
+            (Nova, Lawnchair, Smart Launcher, Niagara, Hyperion, Kvaesitso).
+
+            Nothing OS 5.0 note: the stock Nothing Launcher does not expose a
+            reliable third-party icon-pack picker, so use one of the launchers above
+            for full coverage. Every icon also includes a monochrome layer.

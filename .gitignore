@@ -1,0 +1,23 @@
+# Build output
+build/
+app/build/
+.gradle/
+dist/
+local.properties
+
+# Signing material – never commit
+keystore.properties
+keystore/
+*.jks
+*.keystore
+
+# Tooling
+.venv/
+tools/__pycache__/
+__pycache__/
+
+# OS / editor
+.DS_Store
+.idea/
+*.iml
+Thumbs.db

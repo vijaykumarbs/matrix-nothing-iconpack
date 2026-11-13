@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matrix — Dot-Matrix Icon Pack for Nothing OS</title>
+<meta name="description" content="A premium 126-icon dot-matrix icon system for Nothing OS 5.0. Eight glass and flat styles, four signal colours, zero permissions, free and open source.">
+<meta name="theme-color" content="#07080a">
+<meta property="og:title" content="Matrix — Dot-Matrix Icon Pack">
+<meta property="og:description" content="Signal, not noise. 126 hand-plotted dot glyphs for Nothing OS, in eight premium styles.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/vijaykumarbs/matrix-nothing-iconpack/main/docs/media/gallery-phosphor.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090b0c'/%3E%3Cg fill='%233BF5A0'%3E%3Ccircle cx='9' cy='9' r='2.1'/%3E%3Ccircle cx='16' cy='9' r='2.1'/%3E%3Ccircle cx='23' cy='9' r='2.1'/%3E%3Ccircle cx='9' cy='16' r='2.1'/%3E%3Ccircle cx='16' cy='16' r='2.1'/%3E%3Ccircle cx='23' cy='16' r='2.1'/%3E%3Ccircle cx='9' cy='23' r='2.1'/%3E%3Ccircle cx='16' cy='23' r='2.1'/%3E%3Ccircle cx='23' cy='23' r='2.1'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#07080a;
+    --panel:#0c0e10;
+    --panel-2:#111417;
+    --line:rgba(255,255,255,.085);
+    --line-strong:rgba(255,255,255,.16);
+    --text:#f1f4f2;
+    --dim:#9aa39f;
+    --faint:#69716d;
+    --accent:#3BF5A0;
+    --accent-soft:rgba(59,245,160,.12);
+    --accent-line:rgba(59,245,160,.34);
+    --radius:22px;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden;
+  }
+  ::selection{background:var(--accent);color:#04120b}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  button{font:inherit;color:inherit}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
+  .mono{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:40;border-bottom:1px solid transparent;
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    background:rgba(7,8,10,.66);
+  }
+  header.scrolled{border-bottom-color:var(--line)}
+  .nav{display:flex;align-items:center;gap:26px;height:70px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.24em;font-size:13px}
+  .dotmark{width:22px;height:22px;background-image:radial-gradient(circle,var(--accent) 1.55px,transparent 1.75px);background-size:7.33px 7.33px;background-position:0 0;transition:.25s}
+  .nav-links{display:flex;gap:24px;margin-left:auto;font-size:13px;color:var(--dim)}
+  .nav-links a:hover{color:var(--text)}
+  .nav .ghost-btn{padding:8px 14px;font-size:12px}
+  @media (max-width:820px){.nav-links{display:none}}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 24px;border-radius:12px;border:1px solid var(--accent);
+    background:var(--accent);color:#04130c;font-weight:700;font-size:14px;
+    letter-spacing:.01em;transition:transform .16s ease,filter .16s ease,background .2s,border-color .2s;
+    cursor:pointer;
+  }
+  .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+  .btn:active{transform:translateY(0)}
+  .btn svg{width:16px;height:16px;fill:currentColor}
+  .btn.ghost{background:transparent;border-color:var(--line-strong);color:var(--text);font-weight:600}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.small{padding:10px 16px;font-size:12.5px;border-radius:10px}
+  @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:104px 0 88px;overflow:hidden}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(circle,rgba(255,255,255,.13) 1px,transparent 1.3px);
+    background-size:26px 26px;
+    -webkit-mask-image:radial-gradient(ellipse 82% 74% at 50% 34%,#000 25%,transparent 74%);
+    mask-image:radial-gradient(ellipse 82% 74% at 50% 34%,#000 25%,transparent 74%);
+    opacity:.5;
+  }
+  .hero::after{
+    content:"";position:absolute;left:50%;top:32%;width:760px;height:520px;transform:translate(-50%,-50%);
+    background:radial-gradient(ellipse,var(--accent-soft),transparent 66%);
+    pointer-events:none;transition:background .3s;
+  }
+  .hero .wrap{position:relative;z-index:1}
+  .eyebrow{display:flex;align-items:center;gap:10px;color:var(--dim);margin:0 0 26px}
+  .eyebrow .tick{width:26px;height:1px;background:var(--accent);display:inline-block}
+  h1{
+    margin:0;font-size:clamp(54px,9.4vw,108px);line-height:.94;letter-spacing:-.045em;
+    font-weight:750;max-width:15ch;
+  }
+  h1 .accent{color:var(--accent);transition:color .25s}
+  .lede{max-width:52ch;color:var(--dim);font-size:clamp(15px,1.7vw,18px);margin:28px 0 0;line-height:1.66}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:0;margin-top:54px;border-top:1px solid var(--line);padding-top:22px}
+  .hero-meta div{padding-right:34px;margin-right:34px;border-right:1px solid var(--line)}
+  .hero-meta div:last-child{border-right:0;margin-right:0;padding-right:0}
+  .hero-meta b{display:block;font-size:18px;font-weight:650;letter-spacing:-.01em}
+  .hero-meta span{color:var(--faint);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-family:var(--mono)}
+  @media (max-width:640px){
+    .hero{padding:70px 0 64px}
+    .hero-meta div{padding-right:20px;margin-right:20px}
+    .hero-meta b{font-size:15px}
+    .hero-meta span{font-size:9px;letter-spacing:.12em}
+  }
+
+  /* ---------- section chrome ---------- */
+  section{padding:92px 0}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
+  .section-head h2{margin:8px 0 0;font-size:clamp(28px,4vw,44px);letter-spacing:-.03em;line-height:1.04;font-weight:700}
+  .section-head p{margin:0;color:var(--dim);max-width:40ch;font-size:14.5px}
+  .section-head .tag{color:var(--accent)}
+  .rule{height:1px;background:var(--line);border:0;margin:0}
+
+  /* ---------- studio ---------- */
+  .studio{background:linear-gradient(180deg,rgba(255,255,255,.02),transparent 60%)}
+  .studio-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:60px;align-items:center}
+  .stage{
+    position:relative;border:1px solid var(--line);border-radius:32px;padding:34px;
+    background:radial-gradient(120% 100% at 50% 0%,color-mix(in srgb,var(--accent) 9%,transparent),transparent 62%),var(--panel);
+    min-height:520px;display:flex;align-items:center;justify-content:center;
+    overflow:hidden;transition:background .3s;
+  }
+  .stage .grid-bg{
+    position:absolute;inset:0;
+    background-image:radial-gradient(circle,rgba(255,255,255,.09) 1px,transparent 1.2px);
+    background-size:22px 22px;opacity:.4;
+    mask-image:radial-gradient(ellipse at center,#000 10%,transparent 72%);
+    -webkit-mask-image:radial-gradient(ellipse at center,#000 10%,transparent 72%);
+  }
+  .tile-preview{
+    position:relative;width:min(360px,78%);aspect-ratio:1;border-radius:30%;
+    box-shadow:0 50px 100px -30px #000,0 0 0 1px rgba(255,255,255,.06);
+    transition:box-shadow .3s;
+  }
+  .tile-preview::after{
+    content:"";position:absolute;inset:-26px;border-radius:34%;z-index:-1;
+    background:radial-gradient(circle,var(--accent-soft),transparent 70%);
+    filter:blur(6px);
+  }
+  .tile-preview img{width:100%;height:100%;object-fit:cover;border-radius:30%;background:#0a0d0e}
+  .stage-chip{
+    position:absolute;top:18px;left:18px;display:flex;align-items:center;gap:8px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--dim);
+    border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:rgba(7,8,10,.72);
+  }
+  .stage-chip i{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+  .studio-panel h3{margin:0 0 8px;font-size:22px;letter-spacing:-.02em}
+  .studio-panel .hint{color:var(--dim);font-size:13.5px;margin:0 0 28px}
+  .field-label{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase;margin-bottom:12px}
+  .field-label b{color:var(--text);font-weight:500;letter-spacing:.1em;text-transform:none;font-family:var(--sans);font-size:12.5px}
+  .swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:28px}
+  .swatch{
+    border:1px solid var(--line);background:var(--panel-2);border-radius:14px;padding:13px 10px 11px;
+    cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:9px;
+    transition:border-color .18s,background .18s,transform .18s;
+  }
+  .swatch:hover{transform:translateY(-2px)}
+  .swatch[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+  .swatch .dot{width:22px;height:22px;border-radius:50%;background:var(--sw);box-shadow:0 0 18px -2px var(--sw)}
+  .swatch span{font-size:11px;color:var(--dim);letter-spacing:.06em}
+  .swatch[aria-pressed="true"] span{color:var(--text)}
+  .segmented{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;border:1px solid var(--line);border-radius:14px;background:var(--panel-2);margin-bottom:12px}
+  .segmented button{
+    border:0;background:transparent;border-radius:10px;padding:11px 8px;font-size:12.5px;
+    color:var(--dim);cursor:pointer;transition:.18s;display:flex;align-items:center;justify-content:center;gap:8px;
+  }
+  .segmented button[aria-pressed="true"]{background:#1c2225;color:var(--text);box-shadow:0 1px 0 rgba(255,255,255,.06) inset}
+  .segmented button:hover{color:var(--text)}
+  .segmented .gl{width:12px;height:12px;border-radius:4px;border:1px solid currentColor;opacity:.7}
+  .segmented .gl.solid{background:currentColor}
+  .selection{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    margin-top:22px;padding-top:22px;border-top:1px solid var(--line);
+  }
+  .selection .name{font-size:15px;font-weight:600}
+  .selection .sub{font-size:12px;color:var(--faint)}
+  @media (max-width:920px){
+    .studio-grid{grid-template-columns:1fr;gap:40px}
+    .stage{min-height:0;padding:28px}
+    .tile-preview{width:min(310px,76%)}
+  }
+
+  /* ---------- styles ---------- */
+  .style-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .style-card{
+    position:relative;border:1px solid var(--line);border-radius:20px;background:var(--panel);
+    padding:16px;cursor:pointer;text-align:left;overflow:hidden;transition:border-color .2s,transform .2s,background .2s;
+  }
+  .style-card:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+  .style-card[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft),transparent 70%)}
+  .style-card img{border-radius:12px;width:100%;aspect-ratio:1;object-fit:cover;background:#0a0d0e}
+  .style-card .meta{display:flex;align-items:center;justify-content:space-between;margin-top:13px}
+  .style-card .meta b{font-size:13.5px;font-weight:600;letter-spacing:-.01em}
+  .style-card .meta span{font-size:10px;font-family:var(--mono);letter-spacing:.12em;color:var(--faint);text-transform:uppercase}
+  .style-card .finish{
+    position:absolute;top:24px;right:24px;font-family:var(--mono);font-size:9px;letter-spacing:.14em;
+    padding:4px 7px;border-radius:6px;background:rgba(5,7,8,.72);border:1px solid rgba(255,255,255,.12);
+    color:#cdd5d1;text-transform:uppercase;backdrop-filter:blur(6px);
+  }
+  @media (max-width:900px){.style-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:420px){.style-grid{gap:10px}.style-card{padding:10px;border-radius:16px}.style-card .finish{top:16px;right:16px}}
+
+  /* ---------- install ---------- */
+  .install-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .steps{list-style:none;margin:0;padding:0;counter-reset:step}
+  .steps li{
+    position:relative;counter-increment:step;padding:0 0 34px 66px;border-left:1px solid var(--line);
+    margin-left:16px;
+  }
+  .steps li:last-child{border-left-color:transparent;padding-bottom:0}
+  .steps li::before{
+    content:counter(step,decimal-leading-zero);position:absolute;left:-17px;top:-4px;
+    width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+    background:var(--panel);border:1px solid var(--accent-line);color:var(--accent);
+    font-family:var(--mono);font-size:10px;letter-spacing:.04em;
+  }
+  .steps h4{margin:0 0 6px;font-size:16px;font-weight:600;letter-spacing:-.01em}
+  .steps p{margin:0;color:var(--dim);font-size:13.5px;max-width:44ch}
+  .steps code{
+    font-family:var(--mono);font-size:11.5px;background:var(--panel-2);border:1px solid var(--line);
+    padding:2px 6px;border-radius:5px;color:var(--text);
+  }
+  .launcher-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .launcher-cloud span{
+    border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:11.5px;color:var(--dim);
+    background:rgba(255,255,255,.015);
+  }
+  .callout{
+    border:1px solid var(--accent-line);border-radius:18px;padding:22px;
+    background:linear-gradient(135deg,var(--accent-soft),transparent 72%);
+  }
+  .callout .mono{color:var(--accent);display:flex;align-items:center;gap:9px}
+  .callout .mono i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+  .callout h4{margin:10px 0 6px;font-size:17px;letter-spacing:-.01em}
+  .callout p{margin:0;color:var(--dim);font-size:13.5px}
+  @media (max-width:900px){.install-wrap{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- compatibility ---------- */
+  .compat-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{
+    text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--faint);font-weight:500;padding:0 0 12px;border-bottom:1px solid var(--line);
+  }
+  td{padding:13px 0;border-bottom:1px solid var(--line);color:var(--dim)}
+  td:first-child{color:var(--text)}
+  td:last-child{text-align:right}
+  .pill{
+    display:inline-flex;align-items:center;gap:7px;font-size:11px;font-family:var(--mono);
+    letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-line);
+    padding:4px 9px;border-radius:999px;white-space:nowrap;
+  }
+  .pill.partial{color:#d8c48a;background:rgba(216,196,138,.08);border-color:rgba(216,196,138,.28)}
+  .notes h4{margin:0 0 14px;font-size:13px;letter-spacing:.01em}
+  .notes ul{margin:0;padding:0;list-style:none}
+  .notes li{position:relative;padding-left:20px;color:var(--dim);font-size:13.5px;margin-bottom:15px}
+  .notes li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--accent);opacity:.8}
+  .notes li b{color:var(--text);font-weight:600}
+  @media (max-width:900px){.compat-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* ---------- security ---------- */
+  .sec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .sec-card{border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--panel)}
+  .sec-card .ic{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;margin-bottom:18px;
+    background:var(--accent-soft);border:1px solid var(--accent-line);color:var(--accent);
+  }
+  .sec-card .ic svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+  .sec-card h4{margin:0 0 7px;font-size:15px;letter-spacing:-.01em}
+  .sec-card p{margin:0;color:var(--dim);font-size:13px}
+  @media (max-width:820px){.sec-grid{grid-template-columns:1fr}}
+
+  /* ---------- final cta + footer ---------- */
+  .final{
+    text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:radial-gradient(ellipse 60% 100% at 50% 120%,var(--accent-soft),transparent 70%);
+    padding:96px 0;
+  }
+  .final h2{font-size:clamp(30px,5vw,52px);letter-spacing:-.035em;margin:0 0 14px;line-height:1.05}
+  .final p{color:var(--dim);margin:0 auto 30px;max-width:46ch;font-size:14.5px}
+  footer{padding:44px 0 54px}
+  .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;color:var(--faint);font-size:12px}
+  .foot-links{display:flex;flex-wrap:wrap;gap:20px}
+  .foot a:hover{color:var(--text)}
+  .foot .dotmark{width:16px;height:16px;background-size:5.33px 5.33px}
+  .foot-brand{display:flex;align-items:center;gap:10px;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header id="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Matrix home"><span class="dotmark" aria-hidden="true"></span> MATRIX</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#studio">Style studio</a>
+      <a href="#styles">Styles</a>
+      <a href="#install">Install</a>
+      <a href="#compat">Compatibility</a>
+      <a href="#security">Security</a>
+    </nav>
+    <a class="btn ghost small" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack" rel="noopener">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow mono"><span class="tick"></span> Dot-matrix icon system · Nothing OS 5.0</p>
+      <h1>Signal,<br><span class="accent">not noise.</span></h1>
+      <p class="lede">
+        126 hand-plotted dot glyphs, drawn on a 13×13 grid and rendered as razor-sharp vectors.
+        Four signal colours. Glass or flat. One quiet, deliberate icon system for Android.
+      </p>
+      <div class="hero-cta">
+        <a class="btn" id="downloadBtn" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/matrix-phosphor-glass.apk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4.2-4.2M12 14l-4.2-4.2M4 17.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/></svg>
+          Download <span id="dlLabel">Phosphor Glass</span>
+        </a>
+        <a class="btn ghost" href="#styles">Explore all styles</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>126</b><span>Icons</span></div>
+        <div><b>8</b><span>Styles</span></div>
+        <div><b>0</b><span>Permissions</span></div>
+        <div><b>≈262 KB</b><span>Per style</span></div>
+        <div><b>Android 8+</b><span>API 26</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="studio" id="studio">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">01 — Style studio</p>
+          <h2>Choose your signal.</h2>
+        </div>
+        <p>Switch colour and finish. The preview and download follow your choice — each combination is a small, self-contained APK.</p>
+      </div>
+
+      <div class="studio-grid">
+        <div class="stage">
+          <span class="stage-chip"><i></i> LIVE PREVIEW</span>
+          <div class="grid-bg" aria-hidden="true"></div>
+          <div class="tile-preview">
+            <img id="previewImg" src="media/style-phosphor-glass.png" alt="Matrix Phosphor Glass icon tile" width="360" height="360">
+          </div>
+        </div>
+
+        <div class="studio-panel">
+          <h3 id="studioName">Phosphor Glass</h3>
+          <p class="hint">A 13×13 dot matrix with a subtle glass tile. 126 icons, adaptive and monochrome layers included.</p>
+
+          <div class="field-label"><span>Signal colour</span><b id="familyLabel">Phosphor</b></div>
+          <div class="swatches" role="group" aria-label="Signal colour">
+            <button class="swatch" type="button" data-family="phosphor" style="--sw:#3BF5A0" aria-pressed="true"><span class="dot"></span><span>Phosphor</span></button>
+            <button class="swatch" type="button" data-family="ember" style="--sw:#FF5540" aria-pressed="false"><span class="dot"></span><span>Ember</span></button>
+            <button class="swatch" type="button" data-family="ice" style="--sw:#E9F0F6" aria-pressed="false"><span class="dot"></span><span>Ice</span></button>
+            <button class="swatch" type="button" data-family="amber" style="--sw:#FFB454" aria-pressed="false"><span class="dot"></span><span>Amber</span></button>
+          </div>
+
+          <div class="field-label"><span>Finish</span><b id="finishLabel">Glass</b></div>
+          <div class="segmented" role="group" aria-label="Finish">
+            <button type="button" data-finish="glass" aria-pressed="true"><i class="gl"></i>Glass</button>
+            <button type="button" data-finish="flat" aria-pressed="false"><i class="gl solid"></i>Flat</button>
+          </div>
+
+          <div class="selection">
+            <div>
+              <div class="name" id="selName">Matrix Phosphor Glass</div>
+              <div class="sub" id="selSub">matrix-phosphor-glass.apk · 262 KB</div>
+            </div>
+            <a class="btn small" id="studioDownload" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/matrix-phosphor-glass.apk">Get APK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="styles">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">02 — The collection</p>
+          <h2>Eight finishes. One system.</h2>
+        </div>
+        <p>Glass adds a faint depth to the tile; Flat is pure ink. Both keep the same dot geometry and optical weight.</p>
+      </div>
+
+      <div class="style-grid" id="styleGrid">
+        <button class="style-card" type="button" data-id="phosphorGlass" aria-pressed="true">
+          <span class="finish">Glass</span>
+          <img src="media/style-phosphor-glass.png" alt="Phosphor Glass style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Phosphor</b><span>Glass</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="phosphorFlat" aria-pressed="false">
+          <span class="finish">Flat</span>
+          <img src="media/style-phosphor-flat.png" alt="Phosphor Flat style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Phosphor</b><span>Flat</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="emberGlass" aria-pressed="false">
+          <span class="finish">Glass</span>
+          <img src="media/style-ember-glass.png" alt="Ember Glass style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Ember</b><span>Glass</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="emberFlat" aria-pressed="false">
+          <span class="finish">Flat</span>
+          <img src="media/style-ember-flat.png" alt="Ember Flat style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Ember</b><span>Flat</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="iceGlass" aria-pressed="false">
+          <span class="finish">Glass</span>
+          <img src="media/style-ice-glass.png" alt="Ice Glass style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Ice</b><span>Glass</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="iceFlat" aria-pressed="false">
+          <span class="finish">Flat</span>
+          <img src="media/style-ice-flat.png" alt="Ice Flat style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Ice</b><span>Flat</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="amberGlass" aria-pressed="false">
+          <span class="finish">Glass</span>
+          <img src="media/style-amber-glass.png" alt="Amber Glass style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Amber</b><span>Glass</span></span>
+        </button>
+        <button class="style-card" type="button" data-id="amberFlat" aria-pressed="false">
+          <span class="finish">Flat</span>
+          <img src="media/style-amber-flat.png" alt="Amber Flat style" loading="lazy" width="360" height="360">
+          <span class="meta"><b>Amber</b><span>Flat</span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="install">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">03 — Install</p>
+          <h2>Three taps, no setup.</h2>
+        </div>
+        <p>Install the APK, open Matrix, apply. No root, no companion service, no battery cost.</p>
+      </div>
+
+      <div class="install-wrap">
+        <ol class="steps">
+          <li>
+            <h4>Download your style</h4>
+            <p>Grab the APK above. Android may ask to allow installs from your browser — that permission is Android's, not the pack's.</p>
+          </li>
+          <li>
+            <h4>Open Matrix</h4>
+            <p>The app detects the launchers on your phone and links directly to the icon-pack picker.</p>
+            <div class="launcher-cloud">
+              <span>Nova</span><span>Lawnchair</span><span>Smart Launcher</span><span>Niagara</span><span>Hyperion</span><span>Kvaesitso</span><span>Apex</span><span>ADW</span>
+            </div>
+          </li>
+          <li>
+            <h4>Apply the pack</h4>
+            <p>Choose <b>Matrix</b> in the icon-pack list. Icons redraw instantly — no reboot, no background process.</p>
+          </li>
+        </ol>
+
+        <div>
+          <div class="callout">
+            <p class="mono"><i></i> Nothing OS 5.0 · Android 17</p>
+            <h4>Stock Nothing Launcher note</h4>
+            <p>
+              Nothing Launcher does not yet expose a reliable third-party icon-pack picker, and
+              nothing's icon shape and Themed Icons settings take priority. Matrix targets the
+              standard icon-pack protocol, so it works fully in Nova, Lawnchair, Niagara,
+              Hyperion, Kvaesitso, Smart Launcher and friends. Every icon also ships a monochrome
+              layer for themed-icon modes.
+            </p>
+          </div>
+          <div class="callout" style="margin-top:14px;border-color:var(--line);background:rgba(255,255,255,.015)">
+            <p class="mono" style="color:var(--dim)"><i style="background:var(--dim);box-shadow:none"></i> Verify a download</p>
+            <h4 style="font-family:var(--mono);font-size:12.5px;letter-spacing:.02em">shasum -a 256 -c SHA256SUMS.txt</h4>
+            <p>Checksums ship with every release. Release APKs are signed with a 4096-bit RSA key using APK Signature Scheme v2 and v3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="compat">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">04 — Compatibility</p>
+          <h2>Reads one standard. Everywhere.</h2>
+        </div>
+        <p>Matrix exposes <code style="font-family:var(--mono);font-size:12px;color:var(--dim)">appfilter.xml</code> and <code style="font-family:var(--mono);font-size:12px;color:var(--dim)">drawable.xml</code> — the format launchers actually read.</p>
+      </div>
+
+      <div class="compat-grid">
+        <div>
+          <table>
+            <thead><tr><th>Launcher</th><th>Support</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Nova Launcher</td><td>Full pack list</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Lawnchair</td><td>Full pack list</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Niagara Launcher</td><td>Icon pack picker</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Smart Launcher</td><td>Icon pack picker</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Hyperion</td><td>Icon pack picker</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Kvaesitso</td><td>Icon pack picker</td><td><span class="pill">Supported</span></td></tr>
+              <tr><td>Nothing Launcher</td><td>Themed Icons priority</td><td><span class="pill partial">Partial</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="notes">
+          <h4>What the pack includes</h4>
+          <ul>
+            <li><b>126 curated icons</b> — Google, Nothing, social, work, media, finance, shopping and travel.</li>
+            <li><b>154 component mappings</b> — regional and alternate activities map to the same glyph.</li>
+            <li><b>Adaptive + monochrome</b> — background, tinted foreground and themed layer on every icon.</li>
+            <li><b>Theme-friendly UI</b> — dark surface, edge-to-edge insets, display-cutout aware, no forced orientation.</li>
+            <li><b>Fast by construction</b> — vector-only resources, no bitmaps, no runtime XML parsing, no network calls.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="security">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">05 — Security</p>
+          <h2>Nothing to take.</h2>
+        </div>
+        <p>An icon pack should be a picture book, not a platform. Matrix asks for no permissions and opens no sockets.</p>
+      </div>
+      <div class="sec-grid">
+        <div class="sec-card">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.4 2.9 8.3 7 9.5 4.1-1.2 7-5.1 7-9.5V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h4>Zero permissions</h4>
+          <p>No INTERNET, storage, location or package-list permission. The manifest declares nothing to grant.</p>
+        </div>
+        <div class="sec-card">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span>
+          <h4>No background work</h4>
+          <p>No services, receivers, providers, alarms or scheduled jobs. The app exists only while it is open.</p>
+        </div>
+        <div class="sec-card">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M4 12h16"/><circle cx="12" cy="12" r="8.5"/></svg></span>
+          <h4>Signed &amp; reproducible</h4>
+          <p>v2/v3-signed release APKs, published SHA-256 sums, open source and built in public CI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <p class="mono tag" style="color:var(--accent);margin-bottom:18px">Ready when you are</p>
+      <h2>Give your home screen<br>a quieter signal.</h2>
+      <p>126 icons, eight finishes, one 262 KB download. Free and open source under MIT.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn" id="finalDownload" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/matrix-phosphor-glass.apk">Download <span id="finalLabel">Phosphor Glass</span></a>
+        <a class="btn ghost" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases" rel="noopener">All releases</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-brand"><span class="dotmark" aria-hidden="true"></span> Matrix Icon Pack · MIT</div>
+    <div class="foot-links">
+      <a href="https://github.com/vijaykumarbs/matrix-nothing-iconpack" rel="noopener">GitHub</a>
+      <a href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/issues" rel="noopener">Issues</a>
+      <a href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/SHA256SUMS.txt" rel="noopener">Checksums</a>
+      <a href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/blob/main/LICENSE" rel="noopener">License</a>
+    </div>
+    <div>Not affiliated with Nothing Technology or Google.</div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  "use strict";
+  const BASE = "https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/";
+  const STYLES = {
+    phosphorGlass:{name:"Phosphor Glass",family:"Phosphor",finish:"Glass",slug:"phosphor-glass",accent:"#3BF5A0"},
+    phosphorFlat:{name:"Phosphor Flat",family:"Phosphor",finish:"Flat",slug:"phosphor-flat",accent:"#3BF5A0"},
+    emberGlass:{name:"Ember Glass",family:"Ember",finish:"Glass",slug:"ember-glass",accent:"#FF5540"},
+    emberFlat:{name:"Ember Flat",family:"Ember",finish:"Flat",slug:"ember-flat",accent:"#FF5540"},
+    iceGlass:{name:"Ice Glass",family:"Ice",finish:"Glass",slug:"ice-glass",accent:"#E9F0F6"},
+    iceFlat:{name:"Ice Flat",family:"Ice",finish:"Flat",slug:"ice-flat",accent:"#E9F0F6"},
+    amberGlass:{name:"Amber Glass",family:"Amber",finish:"Glass",slug:"amber-glass",accent:"#FFB454"},
+    amberFlat:{name:"Amber Flat",family:"Amber",finish:"Flat",slug:"amber-flat",accent:"#FFB454"}
+  };
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+  const root = document.documentElement;
+  let current = "phosphorGlass";
+
+  function rgba(hex, a) {
+    const n = parseInt(hex.slice(1), 16);
+    return "rgba(" + ((n >> 16) & 255) + "," + ((n >> 8) & 255) + "," + (n & 255) + "," + a + ")";
+  }
+
+  function apply(id, scrollToStudio) {
+    const s = STYLES[id] || STYLES.phosphorGlass;
+    current = id in STYLES ? id : "phosphorGlass";
+
+    root.style.setProperty("--accent", s.accent);
+    root.style.setProperty("--accent-soft", rgba(s.accent, 0.12));
+    root.style.setProperty("--accent-line", rgba(s.accent, 0.34));
+    $('meta[name="theme-color"]').setAttribute("content", "#07080a");
+
+    $("#previewImg").src = "media/style-" + s.slug + ".png";
+    $("#previewImg").alt = "Matrix " + s.name + " icon tile";
+    $("#studioName").textContent = s.name;
+    $("#familyLabel").textContent = s.family;
+    $("#finishLabel").textContent = s.finish;
+    $("#selName").textContent = "Matrix " + s.name;
+    $("#selSub").textContent = "matrix-" + s.slug + ".apk · 262 KB";
+    $("#dlLabel").textContent = s.name;
+    $("#finalLabel").textContent = s.name;
+
+    const url = BASE + "matrix-" + s.slug + ".apk";
+    ["#downloadBtn", "#studioDownload", "#finalDownload"].forEach(sel => $(sel).href = url);
+
+    $$(".style-card").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.id === current)));
+    $$(".swatch").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.family === s.family.toLowerCase())));
+    $$(".segmented button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.finish === s.finish.toLowerCase())));
+
+    if (scrollToStudio) $("#studio").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
+    try { localStorage.setItem("matrix.style", current); } catch (e) {}
+  }
+
+  $$(".style-card").forEach(card => card.addEventListener("click", () => apply(card.dataset.id, true)));
+
+  $$(".swatch").forEach(btn => btn.addEventListener("click", () => {
+    const family = btn.dataset.family;
+    const finish = STYLES[current].finish.toLowerCase();
+    apply(family + (finish === "glass" ? "Glass" : "Flat"));
+  }));
+
+  $$(".segmented button").forEach(btn => btn.addEventListener("click", () => {
+    const family = STYLES[current].family.toLowerCase();
+    apply(family + (btn.dataset.finish === "glass" ? "Glass" : "Flat"));
+  }));
+
+  const saved = (() => { try { return localStorage.getItem("matrix.style"); } catch (e) { return null; } })();
+  apply(saved && STYLES[saved] ? saved : "phosphorGlass");
+
+  const topbar = $("#topbar");
+  const onScroll = () => topbar.classList.toggle("scrolled", window.scrollY > 8);
+  addEventListener("scroll", onScroll, {passive: true});
+  onScroll();
+})();
+</script>
+</body>
+</html>

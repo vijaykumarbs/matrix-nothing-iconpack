@@ -1,0 +1,701 @@
+{
+  "count": 126,
+  "styles": [
+    {
+      "id": "phosphorGlass",
+      "name": "Phosphor Glass",
+      "slug": "phosphor-glass",
+      "accent": "#3BF5A0",
+      "glass": true,
+      "apk": "matrix-phosphor-glass.apk"
+    },
+    {
+      "id": "phosphorFlat",
+      "name": "Phosphor Flat",
+      "slug": "phosphor-flat",
+      "accent": "#3BF5A0",
+      "glass": false,
+      "apk": "matrix-phosphor-flat.apk"
+    },
+    {
+      "id": "emberGlass",
+      "name": "Ember Glass",
+      "slug": "ember-glass",
+      "accent": "#FF5540",
+      "glass": true,
+      "apk": "matrix-ember-glass.apk"
+    },
+    {
+      "id": "emberFlat",
+      "name": "Ember Flat",
+      "slug": "ember-flat",
+      "accent": "#FF5540",
+      "glass": false,
+      "apk": "matrix-ember-flat.apk"
+    },
+    {
+      "id": "iceGlass",
+      "name": "Ice Glass",
+      "slug": "ice-glass",
+      "accent": "#E9F0F6",
+      "glass": true,
+      "apk": "matrix-ice-glass.apk"
+    },
+    {
+      "id": "iceFlat",
+      "name": "Ice Flat",
+      "slug": "ice-flat",
+      "accent": "#E9F0F6",
+      "glass": false,
+      "apk": "matrix-ice-flat.apk"
+    },
+    {
+      "id": "amberGlass",
+      "name": "Amber Glass",
+      "slug": "amber-glass",
+      "accent": "#FFB454",
+      "glass": true,
+      "apk": "matrix-amber-glass.apk"
+    },
+    {
+      "id": "amberFlat",
+      "name": "Amber Flat",
+      "slug": "amber-flat",
+      "accent": "#FFB454",
+      "glass": false,
+      "apk": "matrix-amber-flat.apk"
+    }
+  ],
+  "apps": [
+    {
+      "name": "chrome",
+      "label": "Chrome",
+      "category": "Google"
+    },
+    {
+      "name": "gmail",
+      "label": "Gmail",
+      "category": "Google"
+    },
+    {
+      "name": "youtube",
+      "label": "YouTube",
+      "category": "Google"
+    },
+    {
+      "name": "playstore",
+      "label": "Play Store",
+      "category": "Google"
+    },
+    {
+      "name": "gphotos",
+      "label": "Photos",
+      "category": "Google"
+    },
+    {
+      "name": "gmaps",
+      "label": "Maps",
+      "category": "Google"
+    },
+    {
+      "name": "gdrive",
+      "label": "Drive",
+      "category": "Google"
+    },
+    {
+      "name": "gcalendar",
+      "label": "Calendar",
+      "category": "Google"
+    },
+    {
+      "name": "gkeep",
+      "label": "Keep",
+      "category": "Google"
+    },
+    {
+      "name": "gmeet",
+      "label": "Meet",
+      "category": "Google"
+    },
+    {
+      "name": "gmessages",
+      "label": "Messages",
+      "category": "Google"
+    },
+    {
+      "name": "gdialer",
+      "label": "Phone",
+      "category": "Google"
+    },
+    {
+      "name": "gcontacts",
+      "label": "Contacts",
+      "category": "Google"
+    },
+    {
+      "name": "gclock",
+      "label": "Clock",
+      "category": "Google"
+    },
+    {
+      "name": "gcalculator",
+      "label": "Calculator",
+      "category": "Google"
+    },
+    {
+      "name": "gcamera",
+      "label": "Camera",
+      "category": "Google"
+    },
+    {
+      "name": "gfiles",
+      "label": "Files",
+      "category": "Google"
+    },
+    {
+      "name": "gtranslate",
+      "label": "Translate",
+      "category": "Google"
+    },
+    {
+      "name": "gdocs",
+      "label": "Docs",
+      "category": "Google"
+    },
+    {
+      "name": "gsheets",
+      "label": "Sheets",
+      "category": "Google"
+    },
+    {
+      "name": "gslides",
+      "label": "Slides",
+      "category": "Google"
+    },
+    {
+      "name": "gpay",
+      "label": "Google Pay",
+      "category": "Google"
+    },
+    {
+      "name": "gemini",
+      "label": "Gemini",
+      "category": "Google"
+    },
+    {
+      "name": "gpixel",
+      "label": "Pixel Tips",
+      "category": "Google"
+    },
+    {
+      "name": "nothing_launcher",
+      "label": "Nothing Launcher",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_camera",
+      "label": "Camera",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_glyph",
+      "label": "Glyph",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_weather",
+      "label": "Weather",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_recorder",
+      "label": "Recorder",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_x",
+      "label": "Nothing X",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_widgets",
+      "label": "Nothing Widgets",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_community",
+      "label": "Community",
+      "category": "Nothing"
+    },
+    {
+      "name": "whatsapp",
+      "label": "WhatsApp",
+      "category": "Social"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "category": "Social"
+    },
+    {
+      "name": "facebook",
+      "label": "Facebook",
+      "category": "Social"
+    },
+    {
+      "name": "x",
+      "label": "X",
+      "category": "Social"
+    },
+    {
+      "name": "threads",
+      "label": "Threads",
+      "category": "Social"
+    },
+    {
+      "name": "snapchat",
+      "label": "Snapchat",
+      "category": "Social"
+    },
+    {
+      "name": "reddit",
+      "label": "Reddit",
+      "category": "Social"
+    },
+    {
+      "name": "telegram",
+      "label": "Telegram",
+      "category": "Social"
+    },
+    {
+      "name": "signal",
+      "label": "Signal",
+      "category": "Social"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "category": "Social"
+    },
+    {
+      "name": "linkedin",
+      "label": "LinkedIn",
+      "category": "Social"
+    },
+    {
+      "name": "pinterest",
+      "label": "Pinterest",
+      "category": "Social"
+    },
+    {
+      "name": "tiktok",
+      "label": "TikTok",
+      "category": "Social"
+    },
+    {
+      "name": "twitch",
+      "label": "Twitch",
+      "category": "Social"
+    },
+    {
+      "name": "wechat",
+      "label": "WeChat",
+      "category": "Social"
+    },
+    {
+      "name": "truecaller",
+      "label": "Truecaller",
+      "category": "Social"
+    },
+    {
+      "name": "protonmail",
+      "label": "Proton Mail",
+      "category": "Social"
+    },
+    {
+      "name": "slack",
+      "label": "Slack",
+      "category": "Work"
+    },
+    {
+      "name": "zoom",
+      "label": "Zoom",
+      "category": "Work"
+    },
+    {
+      "name": "teams",
+      "label": "Teams",
+      "category": "Work"
+    },
+    {
+      "name": "outlook",
+      "label": "Outlook",
+      "category": "Work"
+    },
+    {
+      "name": "word",
+      "label": "Word",
+      "category": "Work"
+    },
+    {
+      "name": "excel",
+      "label": "Excel",
+      "category": "Work"
+    },
+    {
+      "name": "powerpoint",
+      "label": "PowerPoint",
+      "category": "Work"
+    },
+    {
+      "name": "onedrive",
+      "label": "OneDrive",
+      "category": "Work"
+    },
+    {
+      "name": "dropbox",
+      "label": "Dropbox",
+      "category": "Work"
+    },
+    {
+      "name": "notion",
+      "label": "Notion",
+      "category": "Work"
+    },
+    {
+      "name": "trello",
+      "label": "Trello",
+      "category": "Work"
+    },
+    {
+      "name": "github",
+      "label": "GitHub",
+      "category": "Work"
+    },
+    {
+      "name": "figma",
+      "label": "Figma",
+      "category": "Work"
+    },
+    {
+      "name": "canva",
+      "label": "Canva",
+      "category": "Work"
+    },
+    {
+      "name": "jira",
+      "label": "Jira",
+      "category": "Work"
+    },
+    {
+      "name": "evernote",
+      "label": "Evernote",
+      "category": "Work"
+    },
+    {
+      "name": "miro",
+      "label": "Miro",
+      "category": "Work"
+    },
+    {
+      "name": "spotify",
+      "label": "Spotify",
+      "category": "Media"
+    },
+    {
+      "name": "ytmusic",
+      "label": "YouTube Music",
+      "category": "Media"
+    },
+    {
+      "name": "netflix",
+      "label": "Netflix",
+      "category": "Media"
+    },
+    {
+      "name": "prime",
+      "label": "Prime Video",
+      "category": "Media"
+    },
+    {
+      "name": "disney",
+      "label": "Disney+",
+      "category": "Media"
+    },
+    {
+      "name": "hotstar",
+      "label": "Hotstar",
+      "category": "Media"
+    },
+    {
+      "name": "jiocinema",
+      "label": "JioCinema",
+      "category": "Media"
+    },
+    {
+      "name": "gaana",
+      "label": "Gaana",
+      "category": "Media"
+    },
+    {
+      "name": "wynk",
+      "label": "Wynk Music",
+      "category": "Media"
+    },
+    {
+      "name": "audible",
+      "label": "Audible",
+      "category": "Media"
+    },
+    {
+      "name": "kindle",
+      "label": "Kindle",
+      "category": "Media"
+    },
+    {
+      "name": "plex",
+      "label": "Plex",
+      "category": "Media"
+    },
+    {
+      "name": "podcasts",
+      "label": "Podcasts",
+      "category": "Media"
+    },
+    {
+      "name": "vlc",
+      "label": "VLC",
+      "category": "Media"
+    },
+    {
+      "name": "phonepe",
+      "label": "PhonePe",
+      "category": "Finance"
+    },
+    {
+      "name": "paytm",
+      "label": "Paytm",
+      "category": "Finance"
+    },
+    {
+      "name": "groww",
+      "label": "Groww",
+      "category": "Finance"
+    },
+    {
+      "name": "zerodha",
+      "label": "Kite",
+      "category": "Finance"
+    },
+    {
+      "name": "cred",
+      "label": "CRED",
+      "category": "Finance"
+    },
+    {
+      "name": "hdfcbank",
+      "label": "HDFC Bank",
+      "category": "Finance"
+    },
+    {
+      "name": "sbibank",
+      "label": "SBI YONO",
+      "category": "Finance"
+    },
+    {
+      "name": "icicibank",
+      "label": "iMobile",
+      "category": "Finance"
+    },
+    {
+      "name": "axisbank",
+      "label": "Axis Mobile",
+      "category": "Finance"
+    },
+    {
+      "name": "kotak",
+      "label": "Kotak",
+      "category": "Finance"
+    },
+    {
+      "name": "paypal",
+      "label": "PayPal",
+      "category": "Finance"
+    },
+    {
+      "name": "binance",
+      "label": "Binance",
+      "category": "Finance"
+    },
+    {
+      "name": "coinbase",
+      "label": "Coinbase",
+      "category": "Finance"
+    },
+    {
+      "name": "revolut",
+      "label": "Revolut",
+      "category": "Finance"
+    },
+    {
+      "name": "splitwise",
+      "label": "Splitwise",
+      "category": "Finance"
+    },
+    {
+      "name": "amazon",
+      "label": "Amazon",
+      "category": "Shopping"
+    },
+    {
+      "name": "flipkart",
+      "label": "Flipkart",
+      "category": "Shopping"
+    },
+    {
+      "name": "myntra",
+      "label": "Myntra",
+      "category": "Shopping"
+    },
+    {
+      "name": "meesho",
+      "label": "Meesho",
+      "category": "Shopping"
+    },
+    {
+      "name": "ajio",
+      "label": "AJIO",
+      "category": "Shopping"
+    },
+    {
+      "name": "nykaa",
+      "label": "Nykaa",
+      "category": "Shopping"
+    },
+    {
+      "name": "lenskart",
+      "label": "Lenskart",
+      "category": "Shopping"
+    },
+    {
+      "name": "bigbasket",
+      "label": "BigBasket",
+      "category": "Shopping"
+    },
+    {
+      "name": "blinkit",
+      "label": "Blinkit",
+      "category": "Shopping"
+    },
+    {
+      "name": "zepto",
+      "label": "Zepto",
+      "category": "Shopping"
+    },
+    {
+      "name": "dominos",
+      "label": "Domino's",
+      "category": "Shopping"
+    },
+    {
+      "name": "starbucks",
+      "label": "Starbucks",
+      "category": "Shopping"
+    },
+    {
+      "name": "zomato",
+      "label": "Zomato",
+      "category": "Shopping"
+    },
+    {
+      "name": "swiggy",
+      "label": "Swiggy",
+      "category": "Shopping"
+    },
+    {
+      "name": "uber",
+      "label": "Uber",
+      "category": "Travel"
+    },
+    {
+      "name": "ola",
+      "label": "Ola",
+      "category": "Travel"
+    },
+    {
+      "name": "rapido",
+      "label": "Rapido",
+      "category": "Travel"
+    },
+    {
+      "name": "irctc",
+      "label": "IRCTC Rail Connect",
+      "category": "Travel"
+    },
+    {
+      "name": "redbus",
+      "label": "redBus",
+      "category": "Travel"
+    },
+    {
+      "name": "makemytrip",
+      "label": "MakeMyTrip",
+      "category": "Travel"
+    },
+    {
+      "name": "goibibo",
+      "label": "Goibibo",
+      "category": "Travel"
+    },
+    {
+      "name": "booking",
+      "label": "Booking.com",
+      "category": "Travel"
+    },
+    {
+      "name": "airbnb",
+      "label": "Airbnb",
+      "category": "Travel"
+    },
+    {
+      "name": "trivago",
+      "label": "trivago",
+      "category": "Travel"
+    },
+    {
+      "name": "jio",
+      "label": "MyJio",
+      "category": "Travel"
+    },
+    {
+      "name": "airtel",
+      "label": "Airtel",
+      "category": "Travel"
+    },
+    {
+      "name": "settings",
+      "label": "Settings",
+      "category": "System"
+    },
+    {
+      "name": "files_app",
+      "label": "Files",
+      "category": "System"
+    },
+    {
+      "name": "fitness_app",
+      "label": "Fitbit",
+      "category": "System"
+    },
+    {
+      "name": "wallet_app",
+      "label": "Wallet",
+      "category": "System"
+    },
+    {
+      "name": "qr_app",
+      "label": "QR Scanner",
+      "category": "System"
+    }
+  ]
+}

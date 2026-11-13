@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Matrix" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorControlActivated">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+        <item name="android:textColorHint">@color/text_faint</item>
+        <item name="android:alertDialogTheme">@style/Matrix.Dialog</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowContentTransitions">false</item>
+        <item name="android:windowActivityTransitions">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Theme.Matrix.Transparent" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Matrix.Dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:backgroundDimAmount">0.72</item>
+    </style>
+
+    <style name="TextMatrixDisplay">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.16</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextMatrixSection">
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.30</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="TextMatrixBody">
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+</resources>

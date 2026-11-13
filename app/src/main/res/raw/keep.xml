@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Launchers read these two files by name, not through @drawable/@xml
+  references, so the release resource shrinker must not strip them.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@xml/appfilter,@xml/drawable" />
