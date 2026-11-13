@@ -7,6 +7,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
+import android.view.WindowInsetsController;
 
 /** Small, dependency-free UI helpers. */
 final class Ui {
@@ -29,6 +30,15 @@ final class Ui {
         }
         if (Build.VERSION.SDK_INT >= 30) {
             window.setDecorFitsSystemWindows(false);
+            WindowInsetsController controller =
+                    window.getDecorView().getWindowInsetsController();
+            if (controller != null) {
+                // Dark app surface: force light status/nav icons on every OEM skin.
+                controller.setSystemBarsAppearance(
+                        0,
+                        WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
+                                | WindowInsetsController.APPEARANCE_LIGHT_NAVIGATION_BARS);
+            }
         } else {
             window.getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_STABLE

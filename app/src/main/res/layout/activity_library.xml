@@ -63,7 +63,7 @@
             android:paddingEnd="16dp"
             android:singleLine="true"
             android:textColor="@color/text"
-            android:textColorHint="@color/text_faint"
+            android:textColorHint="@color/text_dim"
             android:textSize="14sp" />
 
         <GridView

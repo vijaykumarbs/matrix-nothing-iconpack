@@ -13,12 +13,16 @@ icon-pack protocol.
 | Icons | 126 curated apps (Google, Nothing, social, finance, travel, tools) |
 | Styles | 8 APKs · Phosphor / Ember / Ice / Amber × Glass / Flat |
 | Android | 8.0+ (API 26), tuned for Android 17 / Nothing OS 5.0 |
-| Size | ≈ 262 KB per style |
+| Size | ≈ 210 KB per style |
 | Permissions | **None** |
 | Network | **None** — no Internet permission, no analytics, no trackers |
 | Price | Free, MIT licensed |
 
 ![Matrix Phosphor Glass icon gallery](docs/media/gallery-phosphor.png)
+
+| Style studio | Icon library |
+|---|---|
+| <img src="docs/media/app-phosphor.png" width="290" alt="Matrix style studio"> | <img src="docs/media/app-library.png" width="290" alt="Matrix icon library"> |
 
 ## Download
 

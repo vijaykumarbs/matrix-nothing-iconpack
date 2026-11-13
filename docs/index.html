@@ -201,7 +201,7 @@
   }
   .style-card:hover{transform:translateY(-3px);border-color:var(--line-strong)}
   .style-card[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-soft),transparent 70%)}
-  .style-card img{border-radius:12px;width:100%;aspect-ratio:1;object-fit:cover;background:#0a0d0e}
+  .style-card img{border-radius:12px;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:#0a0d0e}
   .style-card .meta{display:flex;align-items:center;justify-content:space-between;margin-top:13px}
   .style-card .meta b{font-size:13.5px;font-weight:600;letter-spacing:-.01em}
   .style-card .meta span{font-size:10px;font-family:var(--mono);letter-spacing:.12em;color:var(--faint);text-transform:uppercase}
@@ -212,6 +212,18 @@
   }
   @media (max-width:900px){.style-grid{grid-template-columns:repeat(2,1fr)}}
   @media (max-width:420px){.style-grid{gap:10px}.style-card{padding:10px;border-radius:16px}.style-card .finish{top:16px;right:16px}}
+
+  /* ---------- app shots ---------- */
+  .app-shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .app-shots figure{
+    margin:0;border:1px solid var(--line);border-radius:24px;background:var(--panel);
+    padding:14px;overflow:hidden;
+  }
+  .app-shots img{border-radius:16px;width:100%;height:auto;aspect-ratio:9/20;object-fit:cover;object-position:top;background:#000}
+  .app-shots figcaption{padding:14px 6px 4px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .app-shots b{font-size:13px;font-weight:600}
+  .app-shots span{font-size:9.5px;color:var(--faint);font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase}
+  @media (max-width:820px){.app-shots{grid-template-columns:1fr;max-width:390px;margin:0 auto}}
 
   /* ---------- install ---------- */
   .install-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
@@ -306,6 +318,7 @@
     <a class="brand" href="#top" aria-label="Matrix home"><span class="dotmark" aria-hidden="true"></span> MATRIX</a>
     <nav class="nav-links" aria-label="Sections">
       <a href="#studio">Style studio</a>
+      <a href="#app">App</a>
       <a href="#styles">Styles</a>
       <a href="#install">Install</a>
       <a href="#compat">Compatibility</a>
@@ -335,7 +348,7 @@
         <div><b>126</b><span>Icons</span></div>
         <div><b>8</b><span>Styles</span></div>
         <div><b>0</b><span>Permissions</span></div>
-        <div><b>≈262 KB</b><span>Per style</span></div>
+        <div><b>≈210 KB</b><span>Per style</span></div>
         <div><b>Android 8+</b><span>API 26</span></div>
       </div>
     </div>
@@ -383,7 +396,7 @@
           <div class="selection">
             <div>
               <div class="name" id="selName">Matrix Phosphor Glass</div>
-              <div class="sub" id="selSub">matrix-phosphor-glass.apk · 262 KB</div>
+              <div class="sub" id="selSub">matrix-phosphor-glass.apk · 210 KB</div>
             </div>
             <a class="btn small" id="studioDownload" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/matrix-phosphor-glass.apk">Get APK</a>
           </div>
@@ -394,11 +407,39 @@
 
   <hr class="rule">
 
+  <section id="app">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="mono tag">02 — Inside the app</p>
+          <h2>Quietly capable.</h2>
+        </div>
+        <p>The whole product is one screen: a live signature set, a style studio and a clear apply path. Open the library to browse every glyph.</p>
+      </div>
+      <div class="app-shots">
+        <figure>
+          <img src="media/app-phosphor.png" alt="Matrix app style studio in Phosphor Glass" loading="lazy" width="540" height="1200">
+          <figcaption><b>Style studio</b><span>Phosphor Glass</span></figcaption>
+        </figure>
+        <figure>
+          <img src="media/app-ember.png" alt="Matrix app style studio in Ember Glass" loading="lazy" width="540" height="1200">
+          <figcaption><b>One system, four signals</b><span>Ember Glass</span></figcaption>
+        </figure>
+        <figure>
+          <img src="media/app-library.png" alt="Matrix icon library with search" loading="lazy" width="540" height="1200">
+          <figcaption><b>Icon library</b><span>Search · 126 icons</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
   <section id="styles">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="mono tag">02 — The collection</p>
+          <p class="mono tag">03 — The collection</p>
           <h2>Eight finishes. One system.</h2>
         </div>
         <p>Glass adds a faint depth to the tile; Flat is pure ink. Both keep the same dot geometry and optical weight.</p>
@@ -455,7 +496,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="mono tag">03 — Install</p>
+          <p class="mono tag">04 — Install</p>
           <h2>Three taps, no setup.</h2>
         </div>
         <p>Install the APK, open Matrix, apply. No root, no companion service, no battery cost.</p>
@@ -508,7 +549,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="mono tag">04 — Compatibility</p>
+          <p class="mono tag">05 — Compatibility</p>
           <h2>Reads one standard. Everywhere.</h2>
         </div>
         <p>Matrix exposes <code style="font-family:var(--mono);font-size:12px;color:var(--dim)">appfilter.xml</code> and <code style="font-family:var(--mono);font-size:12px;color:var(--dim)">drawable.xml</code> — the format launchers actually read.</p>
@@ -533,7 +574,7 @@
           <h4>What the pack includes</h4>
           <ul>
             <li><b>126 curated icons</b> — Google, Nothing, social, work, media, finance, shopping and travel.</li>
-            <li><b>154 component mappings</b> — regional and alternate activities map to the same glyph.</li>
+            <li><b>160 component mappings</b> — regional and alternate activities map to the same glyph.</li>
             <li><b>Adaptive + monochrome</b> — background, tinted foreground and themed layer on every icon.</li>
             <li><b>Theme-friendly UI</b> — dark surface, edge-to-edge insets, display-cutout aware, no forced orientation.</li>
             <li><b>Fast by construction</b> — vector-only resources, no bitmaps, no runtime XML parsing, no network calls.</li>
@@ -549,7 +590,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="mono tag">05 — Security</p>
+          <p class="mono tag">06 — Security</p>
           <h2>Nothing to take.</h2>
         </div>
         <p>An icon pack should be a picture book, not a platform. Matrix asks for no permissions and opens no sockets.</p>
@@ -578,7 +619,7 @@
     <div class="wrap">
       <p class="mono tag" style="color:var(--accent);margin-bottom:18px">Ready when you are</p>
       <h2>Give your home screen<br>a quieter signal.</h2>
-      <p>126 icons, eight finishes, one 262 KB download. Free and open source under MIT.</p>
+      <p>126 icons, eight finishes, one 210 KB download. Free and open source under MIT.</p>
       <div class="hero-cta" style="justify-content:center">
         <a class="btn" id="finalDownload" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest/download/matrix-phosphor-glass.apk">Download <span id="finalLabel">Phosphor Glass</span></a>
         <a class="btn ghost" href="https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases" rel="noopener">All releases</a>
@@ -639,7 +680,7 @@
     $("#familyLabel").textContent = s.family;
     $("#finishLabel").textContent = s.finish;
     $("#selName").textContent = "Matrix " + s.name;
-    $("#selSub").textContent = "matrix-" + s.slug + ".apk · 262 KB";
+    $("#selSub").textContent = "matrix-" + s.slug + ".apk · 210 KB";
     $("#dlLabel").textContent = s.name;
     $("#finalLabel").textContent = s.name;
 

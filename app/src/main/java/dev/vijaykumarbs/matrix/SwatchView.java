@@ -56,7 +56,7 @@ public final class SwatchView extends View {
         float cy = h / 2f;
         float radius = Math.min(w, h) / 2f - Ui.dp(this, 7f);
 
-        fill.setAlpha(selected ? 255 : 120);
+        fill.setAlpha(selected ? 255 : 180);
         canvas.drawCircle(cx, cy, radius, fill);
 
         if (selected) {

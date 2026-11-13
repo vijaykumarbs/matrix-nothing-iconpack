@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M42.60,38.80h.01M42.60,42.60h.01M42.60,46.40h.01M42.60,50.20h.01M42.60,54.00h.01M42.60,57.80h.01M42.60,61.60h.01M42.60,65.40h.01M42.60,69.20h.01M46.40,38.80h.01M46.40,42.60h.01M46.40,46.40h.01M46.40,50.20h.01M46.40,54.00h.01M46.40,57.80h.01M46.40,61.60h.01M46.40,65.40h.01M46.40,69.20h.01M50.20,54.00h.01M54.00,54.00h.01M57.80,54.00h.01M61.60,38.80h.01M61.60,42.60h.01M61.60,46.40h.01M61.60,50.20h.01M61.60,54.00h.01M61.60,57.80h.01M61.60,61.60h.01M61.60,65.40h.01M61.60,69.20h.01M65.40,38.80h.01M65.40,42.60h.01M65.40,46.40h.01M65.40,50.20h.01M65.40,54.00h.01M65.40,57.80h.01M65.40,61.60h.01M65.40,65.40h.01M65.40,69.20h.01"
+        android:strokeColor="#FFB454"
+        android:strokeWidth="2.6"
+        android:strokeLineCap="round" />
+</vector>

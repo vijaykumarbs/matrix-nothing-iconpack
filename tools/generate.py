@@ -87,7 +87,7 @@ def adaptive_icon(name: str) -> str:
         HEADER
         + '<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">\n'
         + '    <background android:drawable="@drawable/bg_tile" />\n'
-        + '    <foreground android:drawable="@drawable/tint_%s" />\n' % name
+        + '    <foreground android:drawable="@drawable/fg_%s" />\n' % name
         + '    <monochrome android:drawable="@drawable/fg_%s" />\n' % name
         + "</adaptive-icon>\n"
     )
@@ -101,15 +101,6 @@ def app_launcher_icon() -> str:
         + '    <foreground android:drawable="@drawable/ic_launcher_fg" />\n'
         + '    <monochrome android:drawable="@drawable/ic_launcher_fg" />\n'
         + "</adaptive-icon>\n"
-    )
-
-
-def tint_wrapper(name: str) -> str:
-    return (
-        HEADER
-        + '<layer-list xmlns:android="http://schemas.android.com/apk/res/android">\n'
-        + '    <item android:drawable="@drawable/fg_%s" android:tint="@color/accent" />\n' % name
-        + "</layer-list>\n"
     )
 
 
@@ -330,6 +321,8 @@ def write_flavor_resources() -> None:
         (res / "drawable").mkdir(parents=True, exist_ok=True)
         for p in (res / "drawable").glob("tint_*.xml"):
             p.unlink()
+        for p in (res / "drawable").glob("fg_*.xml"):
+            p.unlink()
         for name in ("bg_tile.xml", "ic_launcher_fg.xml"):
             p = res / "drawable" / name
             if p.exists():
@@ -341,8 +334,13 @@ def write_flavor_resources() -> None:
         (res / "drawable" / "ic_launcher_fg.xml").write_text(
             launcher_foreground(style["accent"])
         )
+        # Foreground colour is baked in per style. Launchers do not reliably
+        # propagate a layer-list tint through an adaptive-icon foreground, so
+        # the vectors themselves carry the accent colour.
         for app in APPS:
-            (res / "drawable" / f"tint_{app[0]}.xml").write_text(tint_wrapper(app[0]))
+            (res / "drawable" / f"fg_{app[0]}.xml").write_text(
+                foreground_vector(fit(G[app[2]]), style["accent"])
+            )
         # flavour name shown in the launcher's icon-pack list and app drawer
         escaped = style["name"].replace("&", "&amp;")
         (res / "values" / "strings.xml").write_text(
