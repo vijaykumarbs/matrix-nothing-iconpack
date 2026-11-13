@@ -56,6 +56,12 @@
   .nav-links a:hover{color:var(--text)}
   .nav .ghost-btn{padding:8px 14px;font-size:12px}
   @media (max-width:820px){.nav-links{display:none}}
+  @media (max-width:700px){
+    .section-head{flex-direction:column;align-items:flex-start;gap:14px}
+    .section-head p{max-width:100%}
+    .eyebrow{font-size:9.5px;letter-spacing:.15em}
+    .selection{flex-wrap:wrap}
+  }
 
   /* ---------- buttons ---------- */
   .btn{
@@ -67,7 +73,7 @@
   }
   .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
   .btn:active{transform:translateY(0)}
-  .btn svg{width:16px;height:16px;fill:currentColor}
+  .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
   .btn.ghost{background:transparent;border-color:var(--line-strong);color:var(--text);font-weight:600}
   .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
   .btn.small{padding:10px 16px;font-size:12.5px;border-radius:10px}
@@ -112,7 +118,7 @@
 
   /* ---------- section chrome ---------- */
   section{padding:92px 0}
-  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
+  .section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px}
   .section-head h2{margin:8px 0 0;font-size:clamp(28px,4vw,44px);letter-spacing:-.03em;line-height:1.04;font-weight:700}
   .section-head p{margin:0;color:var(--dim);max-width:40ch;font-size:14.5px}
   .section-head .tag{color:var(--accent)}

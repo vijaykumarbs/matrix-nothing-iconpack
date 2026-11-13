@@ -6,7 +6,7 @@ crisp VectorDrawables, with a glass or flat finish and four signal colours.
 Made for the Nothing OS look. Works with every launcher that supports the standard
 icon-pack protocol.
 
-**[Download the latest release →](https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest)**
+**[Download the latest release →](https://github.com/vijaykumarbs/matrix-nothing-iconpack/releases/latest)** · **[Live style picker ↗](https://vijaykumarbs.github.io/matrix-nothing-iconpack/)**
 
 | | |
 |---|---|
