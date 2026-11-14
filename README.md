@@ -10,10 +10,10 @@ icon-pack protocol.
 
 | | |
 |---|---|
-| Icons | 126 curated apps (Google, Nothing, social, finance, travel, tools) |
+| Icons | 276 curated apps (Google, Nothing, social, work, finance, shopping, travel, games, health, utilities) |
 | Styles | 8 APKs · Phosphor / Ember / Ice / Amber × Glass / Flat |
 | Android | 8.0+ (API 26), tuned for Android 17 / Nothing OS 5.0 |
-| Size | ≈ 210 KB per style |
+| Size | ≈ 420 KB per style |
 | Permissions | **None** |
 | Network | **None** — no Internet permission, no analytics, no trackers |
 | Price | Free, MIT licensed |
@@ -77,7 +77,7 @@ Matrix therefore ships through the standard icon-pack protocol:
 
 - **Stock Nothing Launcher** — Nothing's Themed Icons and icon-shape controls remain in
   charge. Use Matrix with a launcher below if you want the full dot-matrix set.
-- **Nova / Lawnchair / Niagara / Hyperion / Kvaesitso** — full 126-icon coverage, and the
+- **Nova / Lawnchair / Niagara / Hyperion / Kvaesitso** — full 276-icon coverage, and the
   pack appears in the launcher's own icon-pack list.
 - **Adaptive icons** — every icon ships background, foreground and monochrome layers, so
   themed-icon modes keep working where a launcher supports them.
@@ -120,7 +120,7 @@ Requirements: JDK 17+, Android SDK 36, build-tools 36.0.0. The icon resources an
 tables are generated from source-of-truth data:
 
 ```sh
-python3 tools/generate.py     # 126 icons × 8 styles → app/src/*/res + Java
+python3 tools/generate.py     # 276 icons × 8 styles → app/src/*/res + Java
 python3 tools/preview.py      # glyph contact sheet for design QA
 ```
 

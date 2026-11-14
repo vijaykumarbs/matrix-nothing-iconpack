@@ -511,3 +511,73 @@ add("gemini", sparkle if False else poly([(6, 0.5), (7.4, 4.6), (11.5, 6), (7.4,
 # Single-letter marks (used for banks, tools and brand-neutral monograms).
 for _ch in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
     add("letter_" + _ch.lower(), letter(_ch))
+
+# --------------------------------------------------------------------------
+# second wave: glyphs added for the expanded catalog
+# --------------------------------------------------------------------------
+# Bluesky butterfly
+add(
+    "butterfly",
+    line(6, 3, 6, 9)
+    | dots((5, 2), (7, 2))
+    | sym(disc(4.0, 4.2, 1.9) | disc(2.8, 7.4, 1.6))
+    | dots((5, 9), (6, 9), (7, 9)),
+)
+
+# chess pawn (Chess.com, board games)
+add(
+    "pawn",
+    disc(6, 3.0, 1.7)
+    | line(6, 4, 6, 8)
+    | line(4, 8, 8, 8)
+    | line(5, 9, 7, 9)
+    | line(3, 10, 9, 10),
+)
+
+# castle tower (Clash of Clans, strategy games)
+add(
+    "castle",
+    outline(3, 4, 9, 10)
+    | dots((3, 3), (5, 3), (7, 3), (9, 3))
+    | dots((6, 8), (6, 9)),
+)
+
+# Duolingo owl
+add(
+    "owl",
+    ring(6, 7, 4.2, 1.0)
+    | dots((4, 2), (8, 2))
+    | disc(4.4, 5.4, 1.3)
+    | disc(7.6, 5.4, 1.3)
+    | dots((6, 7), (6, 8))
+    | dots((5, 11), (7, 11)),
+)
+
+# Google Home / smart-home devices
+add(
+    "house",
+    tri((1.5, 6), (6, 1), (10.5, 6))
+    | outline(3, 6, 9, 11)
+    | rect(5, 8, 7, 11),
+)
+
+# dice (Ludo, tabletop, random)
+add(
+    "dice",
+    rounded(2, 2, 10, 10, 1)
+    | disc(4, 4, 0.9)
+    | disc(8, 4, 0.9)
+    | disc(6, 6, 0.9)
+    | disc(4, 8, 0.9)
+    | disc(8, 8, 0.9),
+)
+
+# dollar sign (Cash App, US finance)
+add(
+    "dollar",
+    line(6, 1, 6, 11)
+    | polyline((9.5, 3), (3.5, 3), (3.5, 6), (9.5, 6), (9.5, 9), (3.5, 9)),
+)
+
+# Asana mark: three dots
+add("asana", disc(6, 3.8, 1.5) | disc(4.2, 8.6, 1.5) | disc(7.8, 8.6, 1.5))

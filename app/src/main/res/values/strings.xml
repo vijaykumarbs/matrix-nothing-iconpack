@@ -24,7 +24,7 @@
     <string name="apply_nothing">Nothing OS 5.0 (Android 17) keeps its own icon pipeline. Install a launcher from the list above, or use Nothing’s “Apply to Home screen only” flow where your build exposes it. The pack is 100% offline: no permissions, no network, no trackers, no background services.</string>
 
     <string name="library_section">ICON LIBRARY</string>
-    <string name="library_title">Browse all 126 icons</string>
+    <string name="library_title">Browse every icon</string>
     <string name="library_hint">Search, filter by category, request what is missing</string>
 
     <string name="request_title">MISSING AN APP?</string>

@@ -4,4 +4,4 @@
   references, so the release resource shrinker must not strip them.
 -->
 <resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@xml/appfilter,@xml/drawable" />
+    tools:keep="@xml/appfilter,@xml/appmap,@xml/drawable" />

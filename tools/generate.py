@@ -8,6 +8,7 @@ Outputs
 app/src/main/res/drawable/fg_*.xml            dot foreground (white, tintable)
 app/src/main/res/drawable-anydpi-v26/ic_*.xml adaptive icon (background+foreground+mono)
 app/src/main/res/xml/appfilter.xml            launcher component -> icon map
+app/src/main/res/xml/appmap.xml               launcher app name -> icon map
 app/src/main/res/xml/drawable.xml             icon picker index
 app/src/<flavor>/res/...                      accent tint + tile for each style
 app/src/main/java/.../IconCatalog.java        zero-lookup icon index for the UI
@@ -233,6 +234,16 @@ def write_main_resources() -> None:
     )
     (xml / "appfilter.xml").write_text(
         HEADER + "<resources>\n" + items + "\n</resources>\n"
+    )
+
+    # Name-based fallback for launchers that match apps by label instead of
+    # component (appmap.xml format).
+    appmap_items = "\n".join(
+        '    <item name="%s" drawable="ic_%s" />' % (a[1].replace("&", "&amp;"), a[0])
+        for a in APPS
+    )
+    (xml / "appmap.xml").write_text(
+        HEADER + "<resources>\n" + appmap_items + "\n</resources>\n"
     )
 
     by_cat: dict[str, list[str]] = {}

@@ -1,5 +1,5 @@
 {
-  "count": 126,
+  "count": 276,
   "styles": [
     {
       "id": "phosphorGlass",
@@ -685,7 +685,7 @@
     {
       "name": "fitness_app",
       "label": "Fitbit",
-      "category": "System"
+      "category": "Health"
     },
     {
       "name": "wallet_app",
@@ -696,6 +696,756 @@
       "name": "qr_app",
       "label": "QR Scanner",
       "category": "System"
+    },
+    {
+      "name": "gtv",
+      "label": "Google TV",
+      "category": "Google"
+    },
+    {
+      "name": "gnews",
+      "label": "Google News",
+      "category": "Google"
+    },
+    {
+      "name": "gone",
+      "label": "Google One",
+      "category": "Google"
+    },
+    {
+      "name": "gfit",
+      "label": "Google Fit",
+      "category": "Google"
+    },
+    {
+      "name": "ghome",
+      "label": "Google Home",
+      "category": "Google"
+    },
+    {
+      "name": "auto",
+      "label": "Android Auto",
+      "category": "Google"
+    },
+    {
+      "name": "grecorder",
+      "label": "Recorder",
+      "category": "Google"
+    },
+    {
+      "name": "gfind",
+      "label": "Find My Device",
+      "category": "Google"
+    },
+    {
+      "name": "gauth",
+      "label": "Google Authenticator",
+      "category": "Google"
+    },
+    {
+      "name": "gclassroom",
+      "label": "Classroom",
+      "category": "Google"
+    },
+    {
+      "name": "gchat",
+      "label": "Google Chat",
+      "category": "Google"
+    },
+    {
+      "name": "ytkids",
+      "label": "YouTube Kids",
+      "category": "Google"
+    },
+    {
+      "name": "wearos",
+      "label": "Wear OS",
+      "category": "Google"
+    },
+    {
+      "name": "nothing_notes",
+      "label": "Notes",
+      "category": "Nothing"
+    },
+    {
+      "name": "nothing_gallery",
+      "label": "Gallery",
+      "category": "Nothing"
+    },
+    {
+      "name": "bluesky",
+      "label": "Bluesky",
+      "category": "Social"
+    },
+    {
+      "name": "mastodon",
+      "label": "Mastodon",
+      "category": "Social"
+    },
+    {
+      "name": "tumblr",
+      "label": "Tumblr",
+      "category": "Social"
+    },
+    {
+      "name": "weibo",
+      "label": "Weibo",
+      "category": "Social"
+    },
+    {
+      "name": "line",
+      "label": "LINE",
+      "category": "Social"
+    },
+    {
+      "name": "viber",
+      "label": "Viber",
+      "category": "Social"
+    },
+    {
+      "name": "telegramx",
+      "label": "Telegram X",
+      "category": "Social"
+    },
+    {
+      "name": "quora",
+      "label": "Quora",
+      "category": "Social"
+    },
+    {
+      "name": "nextdoor",
+      "label": "Nextdoor",
+      "category": "Social"
+    },
+    {
+      "name": "kakaotalk",
+      "label": "KakaoTalk",
+      "category": "Social"
+    },
+    {
+      "name": "tinder",
+      "label": "Tinder",
+      "category": "Social"
+    },
+    {
+      "name": "onenote",
+      "label": "OneNote",
+      "category": "Work"
+    },
+    {
+      "name": "asana",
+      "label": "Asana",
+      "category": "Work"
+    },
+    {
+      "name": "clickup",
+      "label": "ClickUp",
+      "category": "Work"
+    },
+    {
+      "name": "monday",
+      "label": "monday.com",
+      "category": "Work"
+    },
+    {
+      "name": "basecamp",
+      "label": "Basecamp",
+      "category": "Work"
+    },
+    {
+      "name": "todoist",
+      "label": "Todoist",
+      "category": "Work"
+    },
+    {
+      "name": "ticktick",
+      "label": "TickTick",
+      "category": "Work"
+    },
+    {
+      "name": "webex",
+      "label": "Webex",
+      "category": "Work"
+    },
+    {
+      "name": "acrobat",
+      "label": "Acrobat",
+      "category": "Work"
+    },
+    {
+      "name": "lightroom",
+      "label": "Lightroom",
+      "category": "Work"
+    },
+    {
+      "name": "quickbooks",
+      "label": "QuickBooks",
+      "category": "Work"
+    },
+    {
+      "name": "grammarly",
+      "label": "Grammarly",
+      "category": "Work"
+    },
+    {
+      "name": "obsidian",
+      "label": "Obsidian",
+      "category": "Work"
+    },
+    {
+      "name": "amazonmusic",
+      "label": "Amazon Music",
+      "category": "Media"
+    },
+    {
+      "name": "applemusic",
+      "label": "Apple Music",
+      "category": "Media"
+    },
+    {
+      "name": "soundcloud",
+      "label": "SoundCloud",
+      "category": "Media"
+    },
+    {
+      "name": "deezer",
+      "label": "Deezer",
+      "category": "Media"
+    },
+    {
+      "name": "tidal",
+      "label": "Tidal",
+      "category": "Media"
+    },
+    {
+      "name": "shazam",
+      "label": "Shazam",
+      "category": "Media"
+    },
+    {
+      "name": "jiosaavn",
+      "label": "JioSaavn",
+      "category": "Media"
+    },
+    {
+      "name": "mxplayer",
+      "label": "MX Player",
+      "category": "Media"
+    },
+    {
+      "name": "zee5",
+      "label": "ZEE5",
+      "category": "Media"
+    },
+    {
+      "name": "sonyliv",
+      "label": "SonyLIV",
+      "category": "Media"
+    },
+    {
+      "name": "crunchyroll",
+      "label": "Crunchyroll",
+      "category": "Media"
+    },
+    {
+      "name": "hulu",
+      "label": "Hulu",
+      "category": "Media"
+    },
+    {
+      "name": "max",
+      "label": "Max",
+      "category": "Media"
+    },
+    {
+      "name": "paramount",
+      "label": "Paramount+",
+      "category": "Media"
+    },
+    {
+      "name": "peacock",
+      "label": "Peacock",
+      "category": "Media"
+    },
+    {
+      "name": "pocketcasts",
+      "label": "Pocket Casts",
+      "category": "Media"
+    },
+    {
+      "name": "goodreads",
+      "label": "Goodreads",
+      "category": "Media"
+    },
+    {
+      "name": "imdb",
+      "label": "IMDb",
+      "category": "Media"
+    },
+    {
+      "name": "pocket",
+      "label": "Pocket",
+      "category": "Media"
+    },
+    {
+      "name": "bookmyshow",
+      "label": "BookMyShow",
+      "category": "Media"
+    },
+    {
+      "name": "chase",
+      "label": "Chase",
+      "category": "Finance"
+    },
+    {
+      "name": "wellsfargo",
+      "label": "Wells Fargo",
+      "category": "Finance"
+    },
+    {
+      "name": "bofa",
+      "label": "Bank of America",
+      "category": "Finance"
+    },
+    {
+      "name": "amex",
+      "label": "Amex",
+      "category": "Finance"
+    },
+    {
+      "name": "capitalone",
+      "label": "Capital One",
+      "category": "Finance"
+    },
+    {
+      "name": "venmo",
+      "label": "Venmo",
+      "category": "Finance"
+    },
+    {
+      "name": "cashapp",
+      "label": "Cash App",
+      "category": "Finance"
+    },
+    {
+      "name": "robinhood",
+      "label": "Robinhood",
+      "category": "Finance"
+    },
+    {
+      "name": "wise",
+      "label": "Wise",
+      "category": "Finance"
+    },
+    {
+      "name": "monzo",
+      "label": "Monzo",
+      "category": "Finance"
+    },
+    {
+      "name": "upstox",
+      "label": "Upstox",
+      "category": "Finance"
+    },
+    {
+      "name": "angelone",
+      "label": "Angel One",
+      "category": "Finance"
+    },
+    {
+      "name": "wazirx",
+      "label": "WazirX",
+      "category": "Finance"
+    },
+    {
+      "name": "coindcx",
+      "label": "CoinDCX",
+      "category": "Finance"
+    },
+    {
+      "name": "cryptocom",
+      "label": "Crypto.com",
+      "category": "Finance"
+    },
+    {
+      "name": "ebay",
+      "label": "eBay",
+      "category": "Shopping"
+    },
+    {
+      "name": "etsy",
+      "label": "Etsy",
+      "category": "Shopping"
+    },
+    {
+      "name": "aliexpress",
+      "label": "AliExpress",
+      "category": "Shopping"
+    },
+    {
+      "name": "shein",
+      "label": "SHEIN",
+      "category": "Shopping"
+    },
+    {
+      "name": "walmart",
+      "label": "Walmart",
+      "category": "Shopping"
+    },
+    {
+      "name": "target",
+      "label": "Target",
+      "category": "Shopping"
+    },
+    {
+      "name": "bestbuy",
+      "label": "Best Buy",
+      "category": "Shopping"
+    },
+    {
+      "name": "ikea",
+      "label": "IKEA",
+      "category": "Shopping"
+    },
+    {
+      "name": "jiomart",
+      "label": "JioMart",
+      "category": "Shopping"
+    },
+    {
+      "name": "tataneu",
+      "label": "Tata Neu",
+      "category": "Shopping"
+    },
+    {
+      "name": "olx",
+      "label": "OLX",
+      "category": "Shopping"
+    },
+    {
+      "name": "mcdonalds",
+      "label": "McDonald's",
+      "category": "Shopping"
+    },
+    {
+      "name": "kfc",
+      "label": "KFC",
+      "category": "Shopping"
+    },
+    {
+      "name": "ubereats",
+      "label": "Uber Eats",
+      "category": "Shopping"
+    },
+    {
+      "name": "doordash",
+      "label": "DoorDash",
+      "category": "Shopping"
+    },
+    {
+      "name": "deliveroo",
+      "label": "Deliveroo",
+      "category": "Shopping"
+    },
+    {
+      "name": "urbancompany",
+      "label": "Urban Company",
+      "category": "Shopping"
+    },
+    {
+      "name": "lyft",
+      "label": "Lyft",
+      "category": "Travel"
+    },
+    {
+      "name": "bolt",
+      "label": "Bolt",
+      "category": "Travel"
+    },
+    {
+      "name": "grab",
+      "label": "Grab",
+      "category": "Travel"
+    },
+    {
+      "name": "didi",
+      "label": "DiDi",
+      "category": "Travel"
+    },
+    {
+      "name": "indigo",
+      "label": "IndiGo",
+      "category": "Travel"
+    },
+    {
+      "name": "cleartrip",
+      "label": "Cleartrip",
+      "category": "Travel"
+    },
+    {
+      "name": "agoda",
+      "label": "Agoda",
+      "category": "Travel"
+    },
+    {
+      "name": "expedia",
+      "label": "Expedia",
+      "category": "Travel"
+    },
+    {
+      "name": "kayak",
+      "label": "Kayak",
+      "category": "Travel"
+    },
+    {
+      "name": "skyscanner",
+      "label": "Skyscanner",
+      "category": "Travel"
+    },
+    {
+      "name": "waze",
+      "label": "Waze",
+      "category": "Travel"
+    },
+    {
+      "name": "strava",
+      "label": "Strava",
+      "category": "Health"
+    },
+    {
+      "name": "samsunghealth",
+      "label": "Samsung Health",
+      "category": "Health"
+    },
+    {
+      "name": "healthifyme",
+      "label": "HealthifyMe",
+      "category": "Health"
+    },
+    {
+      "name": "cultfit",
+      "label": "Cult.fit",
+      "category": "Health"
+    },
+    {
+      "name": "nikerun",
+      "label": "Nike Run Club",
+      "category": "Health"
+    },
+    {
+      "name": "calm",
+      "label": "Calm",
+      "category": "Health"
+    },
+    {
+      "name": "headspace",
+      "label": "Headspace",
+      "category": "Health"
+    },
+    {
+      "name": "pubg",
+      "label": "PUBG Mobile",
+      "category": "Games"
+    },
+    {
+      "name": "bgmi",
+      "label": "BGMI",
+      "category": "Games"
+    },
+    {
+      "name": "freefire",
+      "label": "Free Fire",
+      "category": "Games"
+    },
+    {
+      "name": "codm",
+      "label": "Call of Duty",
+      "category": "Games"
+    },
+    {
+      "name": "playstation",
+      "label": "PlayStation",
+      "category": "Games"
+    },
+    {
+      "name": "steam",
+      "label": "Steam",
+      "category": "Games"
+    },
+    {
+      "name": "coc",
+      "label": "Clash of Clans",
+      "category": "Games"
+    },
+    {
+      "name": "clashroyale",
+      "label": "Clash Royale",
+      "category": "Games"
+    },
+    {
+      "name": "candycrush",
+      "label": "Candy Crush",
+      "category": "Games"
+    },
+    {
+      "name": "minecraft",
+      "label": "Minecraft",
+      "category": "Games"
+    },
+    {
+      "name": "roblox",
+      "label": "Roblox",
+      "category": "Games"
+    },
+    {
+      "name": "ludoking",
+      "label": "Ludo King",
+      "category": "Games"
+    },
+    {
+      "name": "chess",
+      "label": "Chess",
+      "category": "Games"
+    },
+    {
+      "name": "pokemongo",
+      "label": "Pok\u00e9mon GO",
+      "category": "Games"
+    },
+    {
+      "name": "dream11",
+      "label": "Dream11",
+      "category": "Games"
+    },
+    {
+      "name": "inshorts",
+      "label": "Inshorts",
+      "category": "News"
+    },
+    {
+      "name": "flipboard",
+      "label": "Flipboard",
+      "category": "News"
+    },
+    {
+      "name": "duolingo",
+      "label": "Duolingo",
+      "category": "Learning"
+    },
+    {
+      "name": "khanacademy",
+      "label": "Khan Academy",
+      "category": "Learning"
+    },
+    {
+      "name": "coursera",
+      "label": "Coursera",
+      "category": "Learning"
+    },
+    {
+      "name": "udemy",
+      "label": "Udemy",
+      "category": "Learning"
+    },
+    {
+      "name": "firefox",
+      "label": "Firefox",
+      "category": "Utilities"
+    },
+    {
+      "name": "brave",
+      "label": "Brave",
+      "category": "Utilities"
+    },
+    {
+      "name": "edge",
+      "label": "Edge",
+      "category": "Utilities"
+    },
+    {
+      "name": "opera",
+      "label": "Opera",
+      "category": "Utilities"
+    },
+    {
+      "name": "duckduckgo",
+      "label": "DuckDuckGo",
+      "category": "Utilities"
+    },
+    {
+      "name": "nova",
+      "label": "Nova Launcher",
+      "category": "Utilities"
+    },
+    {
+      "name": "niagara",
+      "label": "Niagara Launcher",
+      "category": "Utilities"
+    },
+    {
+      "name": "termux",
+      "label": "Termux",
+      "category": "Utilities"
+    },
+    {
+      "name": "shareit",
+      "label": "SHAREit",
+      "category": "Utilities"
+    },
+    {
+      "name": "anydesk",
+      "label": "AnyDesk",
+      "category": "Utilities"
+    },
+    {
+      "name": "camscanner",
+      "label": "CamScanner",
+      "category": "Utilities"
+    },
+    {
+      "name": "snapseed",
+      "label": "Snapseed",
+      "category": "Utilities"
+    },
+    {
+      "name": "picsart",
+      "label": "Picsart",
+      "category": "Utilities"
+    },
+    {
+      "name": "bitwarden",
+      "label": "Bitwarden",
+      "category": "Utilities"
+    },
+    {
+      "name": "onepassword",
+      "label": "1Password",
+      "category": "Utilities"
+    },
+    {
+      "name": "msauth",
+      "label": "Authenticator",
+      "category": "Utilities"
+    },
+    {
+      "name": "accubattery",
+      "label": "AccuBattery",
+      "category": "Utilities"
+    },
+    {
+      "name": "protonvpn",
+      "label": "Proton VPN",
+      "category": "Utilities"
+    },
+    {
+      "name": "expressvpn",
+      "label": "ExpressVPN",
+      "category": "Utilities"
+    },
+    {
+      "name": "tasker",
+      "label": "Tasker",
+      "category": "Utilities"
     }
   ]
 }

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="Chrome" drawable="ic_chrome" />
+    <item name="Gmail" drawable="ic_gmail" />
+    <item name="YouTube" drawable="ic_youtube" />
+    <item name="Play Store" drawable="ic_playstore" />
+    <item name="Photos" drawable="ic_gphotos" />
+    <item name="Maps" drawable="ic_gmaps" />
+    <item name="Drive" drawable="ic_gdrive" />
+    <item name="Calendar" drawable="ic_gcalendar" />
+    <item name="Keep" drawable="ic_gkeep" />
+    <item name="Meet" drawable="ic_gmeet" />
+    <item name="Messages" drawable="ic_gmessages" />
+    <item name="Phone" drawable="ic_gdialer" />
+    <item name="Contacts" drawable="ic_gcontacts" />
+    <item name="Clock" drawable="ic_gclock" />
+    <item name="Calculator" drawable="ic_gcalculator" />
+    <item name="Camera" drawable="ic_gcamera" />
+    <item name="Files" drawable="ic_gfiles" />
+    <item name="Translate" drawable="ic_gtranslate" />
+    <item name="Docs" drawable="ic_gdocs" />
+    <item name="Sheets" drawable="ic_gsheets" />
+    <item name="Slides" drawable="ic_gslides" />
+    <item name="Google Pay" drawable="ic_gpay" />
+    <item name="Gemini" drawable="ic_gemini" />
+    <item name="Pixel Tips" drawable="ic_gpixel" />
+    <item name="Nothing Launcher" drawable="ic_nothing_launcher" />
+    <item name="Camera" drawable="ic_nothing_camera" />
+    <item name="Glyph" drawable="ic_nothing_glyph" />
+    <item name="Weather" drawable="ic_nothing_weather" />
+    <item name="Recorder" drawable="ic_nothing_recorder" />
+    <item name="Nothing X" drawable="ic_nothing_x" />
+    <item name="Nothing Widgets" drawable="ic_nothing_widgets" />
+    <item name="Community" drawable="ic_nothing_community" />
+    <item name="WhatsApp" drawable="ic_whatsapp" />
+    <item name="Instagram" drawable="ic_instagram" />
+    <item name="Facebook" drawable="ic_facebook" />
+    <item name="X" drawable="ic_x" />
+    <item name="Threads" drawable="ic_threads" />
+    <item name="Snapchat" drawable="ic_snapchat" />
+    <item name="Reddit" drawable="ic_reddit" />
+    <item name="Telegram" drawable="ic_telegram" />
+    <item name="Signal" drawable="ic_signal" />
+    <item name="Discord" drawable="ic_discord" />
+    <item name="LinkedIn" drawable="ic_linkedin" />
+    <item name="Pinterest" drawable="ic_pinterest" />
+    <item name="TikTok" drawable="ic_tiktok" />
+    <item name="Twitch" drawable="ic_twitch" />
+    <item name="WeChat" drawable="ic_wechat" />
+    <item name="Truecaller" drawable="ic_truecaller" />
+    <item name="Proton Mail" drawable="ic_protonmail" />
+    <item name="Slack" drawable="ic_slack" />
+    <item name="Zoom" drawable="ic_zoom" />
+    <item name="Teams" drawable="ic_teams" />
+    <item name="Outlook" drawable="ic_outlook" />
+    <item name="Word" drawable="ic_word" />
+    <item name="Excel" drawable="ic_excel" />
+    <item name="PowerPoint" drawable="ic_powerpoint" />
+    <item name="OneDrive" drawable="ic_onedrive" />
+    <item name="Dropbox" drawable="ic_dropbox" />
+    <item name="Notion" drawable="ic_notion" />
+    <item name="Trello" drawable="ic_trello" />
+    <item name="GitHub" drawable="ic_github" />
+    <item name="Figma" drawable="ic_figma" />
+    <item name="Canva" drawable="ic_canva" />
+    <item name="Jira" drawable="ic_jira" />
+    <item name="Evernote" drawable="ic_evernote" />
+    <item name="Miro" drawable="ic_miro" />
+    <item name="Spotify" drawable="ic_spotify" />
+    <item name="YouTube Music" drawable="ic_ytmusic" />
+    <item name="Netflix" drawable="ic_netflix" />
+    <item name="Prime Video" drawable="ic_prime" />
+    <item name="Disney+" drawable="ic_disney" />
+    <item name="Hotstar" drawable="ic_hotstar" />
+    <item name="JioCinema" drawable="ic_jiocinema" />
+    <item name="Gaana" drawable="ic_gaana" />
+    <item name="Wynk Music" drawable="ic_wynk" />
+    <item name="Audible" drawable="ic_audible" />
+    <item name="Kindle" drawable="ic_kindle" />
+    <item name="Plex" drawable="ic_plex" />
+    <item name="Podcasts" drawable="ic_podcasts" />
+    <item name="VLC" drawable="ic_vlc" />
+    <item name="PhonePe" drawable="ic_phonepe" />
+    <item name="Paytm" drawable="ic_paytm" />
+    <item name="Groww" drawable="ic_groww" />
+    <item name="Kite" drawable="ic_zerodha" />
+    <item name="CRED" drawable="ic_cred" />
+    <item name="HDFC Bank" drawable="ic_hdfcbank" />
+    <item name="SBI YONO" drawable="ic_sbibank" />
+    <item name="iMobile" drawable="ic_icicibank" />
+    <item name="Axis Mobile" drawable="ic_axisbank" />
+    <item name="Kotak" drawable="ic_kotak" />
+    <item name="PayPal" drawable="ic_paypal" />
+    <item name="Binance" drawable="ic_binance" />
+    <item name="Coinbase" drawable="ic_coinbase" />
+    <item name="Revolut" drawable="ic_revolut" />
+    <item name="Splitwise" drawable="ic_splitwise" />
+    <item name="Amazon" drawable="ic_amazon" />
+    <item name="Flipkart" drawable="ic_flipkart" />
+    <item name="Myntra" drawable="ic_myntra" />
+    <item name="Meesho" drawable="ic_meesho" />
+    <item name="AJIO" drawable="ic_ajio" />
+    <item name="Nykaa" drawable="ic_nykaa" />
+    <item name="Lenskart" drawable="ic_lenskart" />
+    <item name="BigBasket" drawable="ic_bigbasket" />
+    <item name="Blinkit" drawable="ic_blinkit" />
+    <item name="Zepto" drawable="ic_zepto" />
+    <item name="Domino's" drawable="ic_dominos" />
+    <item name="Starbucks" drawable="ic_starbucks" />
+    <item name="Zomato" drawable="ic_zomato" />
+    <item name="Swiggy" drawable="ic_swiggy" />
+    <item name="Uber" drawable="ic_uber" />
+    <item name="Ola" drawable="ic_ola" />
+    <item name="Rapido" drawable="ic_rapido" />
+    <item name="IRCTC Rail Connect" drawable="ic_irctc" />
+    <item name="redBus" drawable="ic_redbus" />
+    <item name="MakeMyTrip" drawable="ic_makemytrip" />
+    <item name="Goibibo" drawable="ic_goibibo" />
+    <item name="Booking.com" drawable="ic_booking" />
+    <item name="Airbnb" drawable="ic_airbnb" />
+    <item name="trivago" drawable="ic_trivago" />
+    <item name="MyJio" drawable="ic_jio" />
+    <item name="Airtel" drawable="ic_airtel" />
+    <item name="Settings" drawable="ic_settings" />
+    <item name="Files" drawable="ic_files_app" />
+    <item name="Fitbit" drawable="ic_fitness_app" />
+    <item name="Wallet" drawable="ic_wallet_app" />
+    <item name="QR Scanner" drawable="ic_qr_app" />
+    <item name="Google TV" drawable="ic_gtv" />
+    <item name="Google News" drawable="ic_gnews" />
+    <item name="Google One" drawable="ic_gone" />
+    <item name="Google Fit" drawable="ic_gfit" />
+    <item name="Google Home" drawable="ic_ghome" />
+    <item name="Android Auto" drawable="ic_auto" />
+    <item name="Recorder" drawable="ic_grecorder" />
+    <item name="Find My Device" drawable="ic_gfind" />
+    <item name="Google Authenticator" drawable="ic_gauth" />
+    <item name="Classroom" drawable="ic_gclassroom" />
+    <item name="Google Chat" drawable="ic_gchat" />
+    <item name="YouTube Kids" drawable="ic_ytkids" />
+    <item name="Wear OS" drawable="ic_wearos" />
+    <item name="Notes" drawable="ic_nothing_notes" />
+    <item name="Gallery" drawable="ic_nothing_gallery" />
+    <item name="Bluesky" drawable="ic_bluesky" />
+    <item name="Mastodon" drawable="ic_mastodon" />
+    <item name="Tumblr" drawable="ic_tumblr" />
+    <item name="Weibo" drawable="ic_weibo" />
+    <item name="LINE" drawable="ic_line" />
+    <item name="Viber" drawable="ic_viber" />
+    <item name="Telegram X" drawable="ic_telegramx" />
+    <item name="Quora" drawable="ic_quora" />
+    <item name="Nextdoor" drawable="ic_nextdoor" />
+    <item name="KakaoTalk" drawable="ic_kakaotalk" />
+    <item name="Tinder" drawable="ic_tinder" />
+    <item name="OneNote" drawable="ic_onenote" />
+    <item name="Asana" drawable="ic_asana" />
+    <item name="ClickUp" drawable="ic_clickup" />
+    <item name="monday.com" drawable="ic_monday" />
+    <item name="Basecamp" drawable="ic_basecamp" />
+    <item name="Todoist" drawable="ic_todoist" />
+    <item name="TickTick" drawable="ic_ticktick" />
+    <item name="Webex" drawable="ic_webex" />
+    <item name="Acrobat" drawable="ic_acrobat" />
+    <item name="Lightroom" drawable="ic_lightroom" />
+    <item name="QuickBooks" drawable="ic_quickbooks" />
+    <item name="Grammarly" drawable="ic_grammarly" />
+    <item name="Obsidian" drawable="ic_obsidian" />
+    <item name="Amazon Music" drawable="ic_amazonmusic" />
+    <item name="Apple Music" drawable="ic_applemusic" />
+    <item name="SoundCloud" drawable="ic_soundcloud" />
+    <item name="Deezer" drawable="ic_deezer" />
+    <item name="Tidal" drawable="ic_tidal" />
+    <item name="Shazam" drawable="ic_shazam" />
+    <item name="JioSaavn" drawable="ic_jiosaavn" />
+    <item name="MX Player" drawable="ic_mxplayer" />
+    <item name="ZEE5" drawable="ic_zee5" />
+    <item name="SonyLIV" drawable="ic_sonyliv" />
+    <item name="Crunchyroll" drawable="ic_crunchyroll" />
+    <item name="Hulu" drawable="ic_hulu" />
+    <item name="Max" drawable="ic_max" />
+    <item name="Paramount+" drawable="ic_paramount" />
+    <item name="Peacock" drawable="ic_peacock" />
+    <item name="Pocket Casts" drawable="ic_pocketcasts" />
+    <item name="Goodreads" drawable="ic_goodreads" />
+    <item name="IMDb" drawable="ic_imdb" />
+    <item name="Pocket" drawable="ic_pocket" />
+    <item name="BookMyShow" drawable="ic_bookmyshow" />
+    <item name="Chase" drawable="ic_chase" />
+    <item name="Wells Fargo" drawable="ic_wellsfargo" />
+    <item name="Bank of America" drawable="ic_bofa" />
+    <item name="Amex" drawable="ic_amex" />
+    <item name="Capital One" drawable="ic_capitalone" />
+    <item name="Venmo" drawable="ic_venmo" />
+    <item name="Cash App" drawable="ic_cashapp" />
+    <item name="Robinhood" drawable="ic_robinhood" />
+    <item name="Wise" drawable="ic_wise" />
+    <item name="Monzo" drawable="ic_monzo" />
+    <item name="Upstox" drawable="ic_upstox" />
+    <item name="Angel One" drawable="ic_angelone" />
+    <item name="WazirX" drawable="ic_wazirx" />
+    <item name="CoinDCX" drawable="ic_coindcx" />
+    <item name="Crypto.com" drawable="ic_cryptocom" />
+    <item name="eBay" drawable="ic_ebay" />
+    <item name="Etsy" drawable="ic_etsy" />
+    <item name="AliExpress" drawable="ic_aliexpress" />
+    <item name="SHEIN" drawable="ic_shein" />
+    <item name="Walmart" drawable="ic_walmart" />
+    <item name="Target" drawable="ic_target" />
+    <item name="Best Buy" drawable="ic_bestbuy" />
+    <item name="IKEA" drawable="ic_ikea" />
+    <item name="JioMart" drawable="ic_jiomart" />
+    <item name="Tata Neu" drawable="ic_tataneu" />
+    <item name="OLX" drawable="ic_olx" />
+    <item name="McDonald's" drawable="ic_mcdonalds" />
+    <item name="KFC" drawable="ic_kfc" />
+    <item name="Uber Eats" drawable="ic_ubereats" />
+    <item name="DoorDash" drawable="ic_doordash" />
+    <item name="Deliveroo" drawable="ic_deliveroo" />
+    <item name="Urban Company" drawable="ic_urbancompany" />
+    <item name="Lyft" drawable="ic_lyft" />
+    <item name="Bolt" drawable="ic_bolt" />
+    <item name="Grab" drawable="ic_grab" />
+    <item name="DiDi" drawable="ic_didi" />
+    <item name="IndiGo" drawable="ic_indigo" />
+    <item name="Cleartrip" drawable="ic_cleartrip" />
+    <item name="Agoda" drawable="ic_agoda" />
+    <item name="Expedia" drawable="ic_expedia" />
+    <item name="Kayak" drawable="ic_kayak" />
+    <item name="Skyscanner" drawable="ic_skyscanner" />
+    <item name="Waze" drawable="ic_waze" />
+    <item name="Strava" drawable="ic_strava" />
+    <item name="Samsung Health" drawable="ic_samsunghealth" />
+    <item name="HealthifyMe" drawable="ic_healthifyme" />
+    <item name="Cult.fit" drawable="ic_cultfit" />
+    <item name="Nike Run Club" drawable="ic_nikerun" />
+    <item name="Calm" drawable="ic_calm" />
+    <item name="Headspace" drawable="ic_headspace" />
+    <item name="PUBG Mobile" drawable="ic_pubg" />
+    <item name="BGMI" drawable="ic_bgmi" />
+    <item name="Free Fire" drawable="ic_freefire" />
+    <item name="Call of Duty" drawable="ic_codm" />
+    <item name="PlayStation" drawable="ic_playstation" />
+    <item name="Steam" drawable="ic_steam" />
+    <item name="Clash of Clans" drawable="ic_coc" />
+    <item name="Clash Royale" drawable="ic_clashroyale" />
+    <item name="Candy Crush" drawable="ic_candycrush" />
+    <item name="Minecraft" drawable="ic_minecraft" />
+    <item name="Roblox" drawable="ic_roblox" />
+    <item name="Ludo King" drawable="ic_ludoking" />
+    <item name="Chess" drawable="ic_chess" />
+    <item name="Pokémon GO" drawable="ic_pokemongo" />
+    <item name="Dream11" drawable="ic_dream11" />
+    <item name="Inshorts" drawable="ic_inshorts" />
+    <item name="Flipboard" drawable="ic_flipboard" />
+    <item name="Duolingo" drawable="ic_duolingo" />
+    <item name="Khan Academy" drawable="ic_khanacademy" />
+    <item name="Coursera" drawable="ic_coursera" />
+    <item name="Udemy" drawable="ic_udemy" />
+    <item name="Firefox" drawable="ic_firefox" />
+    <item name="Brave" drawable="ic_brave" />
+    <item name="Edge" drawable="ic_edge" />
+    <item name="Opera" drawable="ic_opera" />
+    <item name="DuckDuckGo" drawable="ic_duckduckgo" />
+    <item name="Nova Launcher" drawable="ic_nova" />
+    <item name="Niagara Launcher" drawable="ic_niagara" />
+    <item name="Termux" drawable="ic_termux" />
+    <item name="SHAREit" drawable="ic_shareit" />
+    <item name="AnyDesk" drawable="ic_anydesk" />
+    <item name="CamScanner" drawable="ic_camscanner" />
+    <item name="Snapseed" drawable="ic_snapseed" />
+    <item name="Picsart" drawable="ic_picsart" />
+    <item name="Bitwarden" drawable="ic_bitwarden" />
+    <item name="1Password" drawable="ic_onepassword" />
+    <item name="Authenticator" drawable="ic_msauth" />
+    <item name="AccuBattery" drawable="ic_accubattery" />
+    <item name="Proton VPN" drawable="ic_protonvpn" />
+    <item name="ExpressVPN" drawable="ic_expressvpn" />
+    <item name="Tasker" drawable="ic_tasker" />
+</resources>
